@@ -1,8 +1,5 @@
 <div align="center">
 
-<!-- ✅ تمت إضافة اللوجو هنا -->
-<img src="https://raw.githubusercontent.com/Diagoo1/Dreams-Software-Collection/main/Assets/Icons/Logo.png" alt="Dreams Logo" width="120" height="120">
-
 # 🌙 Dreams Software Collection
 
 **A powerful all-in-one Windows optimization and management toolkit built with WPF (.NET 4.8)**
@@ -40,27 +37,26 @@ Dreams Software is a feature-rich desktop application for Windows power users wh
 
 ---
 
-## 📸 Screenshots Gallery
+## 📸 Screenshots
 
 <div align="center">
 
-| | | |
-|:---:|:---:|:---:|
-| **1. Home Page** | **2. Optimize Page** | **3. Install Page** |
-| [![Home](https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/1.png?raw=true)]() | [![Optimize](https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/2.png?raw=true)]() | [![Install](https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/3.png?raw=true)]() |
+<img src="https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/1.png?raw=true" width="45%">
+<img src="https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/9.png?raw=true" width="45%">
 
-| **4. Online Store** | **5. DNS Manager** | **6. Tweaks Page** |
-| [![Online](https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/4.png?raw=true)]() | [![DNS](https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/5.png?raw=true)]() | [![Tweaks](https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/6.png?raw=true)]() |
+<img src="https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/4.png?raw=true" width="45%">
+<img src="https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/5.png?raw=true" width="45%">
 
-| **7. Settings** | **8. About Window** | **9. System Tray** |
-| [![Settings](https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/7.png?raw=true)]() | [![About](https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/8.png?raw=true)]() | [![Tray](https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/9.png?raw=true)]() |
+<img src="https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/6.png?raw=true" width="45%">
+<img src="https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/7.png?raw=true" width="45%">
 
-| **10. Dark Mode** | **11. Arabic RTL** | |
-| [![Dark](https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/10.png?raw=true)]() | [![Arabic](https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/11.png?raw=true)]() | |
+<img src="https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/8.png?raw=true" width="45%">
+<img src="https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/3.png?raw=true" width="45%">
+
+<img src="https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/10.png?raw=true" width="45%">
+<img src="https://github.com/Diagoo1/Dreams-Software-Collection/blob/main/Screenshots/11.png?raw=true" width="45%">
 
 </div>
-
-*Click on any image to view full size*
 
 ---
 
@@ -330,24 +326,6 @@ Made with ❤️ by **Tarek Sadek**
 MIT License
 
 Copyright (c) 2025 Tarek Sadek
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 
 ---
 
