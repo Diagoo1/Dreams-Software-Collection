@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/Diagoo1/Dreams-Software-Collection/main/Assets/Icons/Logo.png" width="120" height="120">
+
 # 🌙 Dreams Software Collection
 
 **A powerful all-in-one Windows optimization and management toolkit built with WPF (.NET 4.8)**
@@ -325,10 +327,16 @@ Made with ❤️ by **Tarek Sadek**
 
 MIT License
 
-Copyright (c) 2025 Tarek Sadek
+Copyright (c) 2026 Tarek Sadek
 
 ---
 
 <div align="center">
 <sub>Dreams Software — Because your PC deserves better.</sub>
+</div>
+
+---
+
+<div align="center">
+<sub>Logo designed by <a href="https://github.com/parcoil/sparkle">Sparkle Project</a> — Used with appreciation and respect. All rights to the original logo belong to their respective owner.</sub>
 </div>
