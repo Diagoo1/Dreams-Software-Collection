@@ -323,6 +323,19 @@ Made with ❤️ by **Tarek Sadek**
 
 ---
 
+## ☕ Support the Project
+
+**Did this project help you?**  
+If you find Dreams Software useful, please consider buying me a coffee to support continued development.
+
+<div align="center">
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/diagoo1)
+
+</div>
+
+---
+
 ## 📄 License
 
 MIT License
