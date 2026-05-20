@@ -1,0 +1,194 @@
+﻿<Window x:Class="Dreams.TrayMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TrayMenu" Width="185" SizeToContent="Height"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        ResizeMode="NoResize" ShowInTaskbar="False" Topmost="True"
+        WindowStartupLocation="Manual"
+        FlowDirection="{DynamicResource ApplicationFlowDirection}"
+        Deactivated="Window_Deactivated">
+
+    <Window.Resources>
+
+        <!-- ============================================ -->
+        <!-- GRADIENT FOR HEADER                          -->
+        <!-- ============================================ -->
+        <LinearGradientBrush x:Key="HeaderGradient" StartPoint="0,0" EndPoint="1,0.5">
+            <GradientStop Color="#0EA5E9" Offset="0"/>
+            <GradientStop Color="#8B5CF6" Offset="1"/>
+        </LinearGradientBrush>
+
+        <!-- ============================================ -->
+        <!-- BASE STYLE - TRAY MENU ITEM                  -->
+        <!-- ============================================ -->
+        <Style x:Key="TrayMenuItem" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{DynamicResource DynamicMainText}"/>
+            <Setter Property="Padding" Value="10,8"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Bd" 
+                                Background="{TemplateBinding Background}" 
+                                CornerRadius="8" 
+                                Margin="4,2" 
+                                BorderThickness="0"
+                                SnapsToDevicePixels="True">
+
+                            <Grid x:Name="ContentGrid" Margin="{TemplateBinding Padding}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock x:Name="Icon" 
+                                           Grid.Column="0"
+                                           Text="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" 
+                                           FontFamily="Segoe MDL2 Assets" 
+                                           FontSize="15" 
+                                           VerticalAlignment="Center" 
+                                           HorizontalAlignment="Center"
+                                           Foreground="{TemplateBinding Foreground}">
+                                    <TextBlock.RenderTransform>
+                                        <TranslateTransform X="0"/>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+
+                                <ContentPresenter x:Name="Text"
+                                                  Grid.Column="1" 
+                                                  VerticalAlignment="Center" 
+                                                  Margin="8,0,0,0">
+                                    <ContentPresenter.RenderTransform>
+                                        <TranslateTransform X="0"/>
+                                    </ContentPresenter.RenderTransform>
+                                </ContentPresenter>
+                            </Grid>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Bd" Property="Background" Value="{DynamicResource DynamicHoverBg}"/>
+                                <Setter Property="Foreground" Value="{DynamicResource DynamicAccent}"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetName="Icon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" To="2" Duration="0:0:0.2"/>
+                                            <DoubleAnimation Storyboard.TargetName="Text" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" To="2" Duration="0:0:0.2"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetName="Icon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" To="0" Duration="0:0:0.2"/>
+                                            <DoubleAnimation Storyboard.TargetName="Text" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" To="0" Duration="0:0:0.2"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Bd" Property="Opacity" Value="0.7"/>
+                                <Setter TargetName="ContentGrid" Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="0.98" ScaleY="0.98"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- ============================================ -->
+        <!-- SPECIAL STYLE - EXIT ITEM                    -->
+        <!-- ============================================ -->
+        <Style x:Key="TrayMenuItemExit" TargetType="Button" BasedOn="{StaticResource TrayMenuItem}">
+            <Setter Property="Foreground" Value="{DynamicResource DynamicError}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Bd" Background="{TemplateBinding Background}" CornerRadius="8" Margin="4,2">
+                            <Grid Margin="10,8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock x:Name="Icon" Grid.Column="0" Text="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" FontFamily="Segoe MDL2 Assets" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="{TemplateBinding Foreground}"/>
+                                <ContentPresenter x:Name="Text" Grid.Column="1" VerticalAlignment="Center" Margin="8,0,0,0"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Bd" Property="Background" Value="{DynamicResource DynamicError}"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- ============================================ -->
+        <!-- SEPARATOR STYLE                              -->
+        <!-- ============================================ -->
+        <Style x:Key="TrayMenuSeparator" TargetType="Separator">
+            <Setter Property="Background" Value="{DynamicResource DynamicBorderBrush}"/>
+            <Setter Property="Margin" Value="10,4"/>
+            <Setter Property="Height" Value="1"/>
+            <Setter Property="Opacity" Value="0.5"/>
+        </Style>
+
+    </Window.Resources>
+
+    <!-- ============================================ -->
+    <!-- MAIN WINDOW LAYOUT                           -->
+    <!-- ============================================ -->
+    <Border Background="{DynamicResource DynamicSidebarBg}"
+            CornerRadius="14"
+            BorderBrush="{DynamicResource DynamicBorderBrush}"
+            BorderThickness="1"
+            Margin="10">
+
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="15" ShadowDepth="0" Opacity="0.2" Color="Black"/>
+        </Border.Effect>
+
+        <StackPanel Margin="2">
+
+            <!-- Header Section (Logo & Name) -->
+            <StackPanel Orientation="Horizontal" Margin="12,10,12,8">
+                <Image Source="/Assets/Icons/Logo.png" Width="40" Height="30" Margin="0,0,10,0" RenderOptions.BitmapScalingMode="HighQuality"/>
+                <TextBlock Text="{DynamicResource ShortName}" 
+                           FontSize="15" FontWeight="Bold" 
+                           Foreground="{StaticResource HeaderGradient}"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <Separator Style="{StaticResource TrayMenuSeparator}"/>
+
+            <!-- Navigation Items -->
+            <Button Content="{DynamicResource Dashboard}" Tag="&#xE80F;" Style="{StaticResource TrayMenuItem}" Click="Open_Click"/>
+            <Button Content="{DynamicResource Installer}" Tag="&#xF158;" Style="{StaticResource TrayMenuItem}" Click="Install_Click"/>
+            <Button Content="{DynamicResource AppStore}" Tag="&#xE896;" Style="{StaticResource TrayMenuItem}" Click="AppStore_Click"/>
+            <Button Content="{DynamicResource Optimize}"  Tag="&#xE945;" Style="{StaticResource TrayMenuItem}" Click="Optimize_Click"/>
+            <Button Content="{DynamicResource Tweaks}"  Tag="&#xE90F;" Style="{StaticResource TrayMenuItem}" Click="Tweaks_Click"/>
+            <Button Content="{DynamicResource DNS}"  Tag="&#xEE77;" Style="{StaticResource TrayMenuItem}" Click="DNS_Click"/>
+
+            <Separator Style="{StaticResource TrayMenuSeparator}"/>
+
+            <!-- System Items -->
+            <Button Content="{DynamicResource Settings}"  Tag="&#xE713;" Style="{StaticResource TrayMenuItem}" Click="Settings_Click"/>
+            <Button Content="{DynamicResource About}"     Tag="&#xE946;" Style="{StaticResource TrayMenuItem}" Click="About_Click"/>
+
+            <Separator Style="{StaticResource TrayMenuSeparator}"/>
+
+            <!-- Destructive Item -->
+            <Button Content="{DynamicResource Exit}"      Tag="&#xE711;" Style="{StaticResource TrayMenuItemExit}" Click="Exit_Click"/>
+
+        </StackPanel>
+    </Border>
+</Window>

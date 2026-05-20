@@ -1,0 +1,164 @@
+﻿<Application x:Class="Dreams.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Dreams">
+    
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Lang/Lang-EN.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- ============================================ -->
+            <!-- GLOBAL FONT FAMILY (Dynamic)                 -->
+            <!-- ============================================ -->
+            <FontFamily x:Key="Font_EN">pack://application:,,,/Fonts/#Satoshi Variable, pack://application:,,,/Fonts/#29LT Bukra Regular</FontFamily>
+            <FontFamily x:Key="Font_FR">pack://application:,,,/Fonts/#Satoshi Variable, pack://application:,,,/Fonts/#29LT Bukra Regular</FontFamily>
+            <FontFamily x:Key="Font_ES">pack://application:,,,/Fonts/#Satoshi Variable, pack://application:,,,/Fonts/#29LT Bukra Regular</FontFamily>
+            <FontFamily x:Key="Font_RU">pack://application:,,,/Fonts/#Stem-Regular, pack://application:,,,/Fonts/#29LT Bukra Regular</FontFamily>
+            <FontFamily x:Key="Font_AR">pack://application:,,,/Fonts/#29LT Bukra Regular, pack://application:,,,/Fonts/#Satoshi Variable</FontFamily>
+
+            <FontFamily x:Key="GlobalFontFamily">Segoe UI</FontFamily>
+
+            <!-- ============================================ -->
+            <!-- GLOBAL STYLES WITH DYNAMIC FONT              -->
+            <!-- ============================================ -->
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="FontFamily" Value="{DynamicResource GlobalFontFamily}"/>
+            </Style>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="FontFamily" Value="{DynamicResource GlobalFontFamily}"/>
+            </Style>
+            <Style TargetType="{x:Type Label}">
+                <Setter Property="FontFamily" Value="{DynamicResource GlobalFontFamily}"/>
+            </Style>
+            <Style TargetType="{x:Type CheckBox}">
+                <Setter Property="FontFamily" Value="{DynamicResource GlobalFontFamily}"/>
+            </Style>
+
+            <!-- ============================================ -->
+            <!-- LIGHT MODE COLORS                            -->
+            <!-- ============================================ -->
+            <SolidColorBrush x:Key="WindowBg" Color="#F1F5F9"/>
+            <SolidColorBrush x:Key="SidebarBg" Color="#FFFFFF"/>
+            <SolidColorBrush x:Key="CardBg" Color="#FFFFFF"/>
+            <SolidColorBrush x:Key="MainText" Color="#1E293B"/>
+            <SolidColorBrush x:Key="SubText" Color="#64748B"/>
+            <SolidColorBrush x:Key="Accent" Color="#0EA5E9"/>
+            <SolidColorBrush x:Key="BorderBrush" Color="#E2E8F0"/>
+            <SolidColorBrush x:Key="Border" Color="#E2E8F0"/>
+            <SolidColorBrush x:Key="HoverBg" Color="#E2E8F0"/>
+            <SolidColorBrush x:Key="TotalCardBg" Color="#F8FAFC"/>
+            <SolidColorBrush x:Key="Success" Color="#22C55E"/>
+            <SolidColorBrush x:Key="Warning" Color="#EF4444"/>
+            <SolidColorBrush x:Key="Error" Color="#EF4444"/>
+            <SolidColorBrush x:Key="Info" Color="#F97316"/>
+            <SolidColorBrush x:Key="Purple" Color="#8B5CF6"/>
+            <SolidColorBrush x:Key="Pink" Color="#EC4899"/>
+            <SolidColorBrush x:Key="Indigo" Color="#6366F1"/>
+            <SolidColorBrush x:Key="Teal" Color="#14B8A6"/>
+            <SolidColorBrush x:Key="Violet" Color="#A855F7"/>
+            <SolidColorBrush x:Key="Fuchsia" Color="#D946EF"/>
+            <SolidColorBrush x:Key="BlueLight" Color="#2585F0"/>
+            <SolidColorBrush x:Key="BlueMedium" Color="#3B82F6"/>
+            <SolidColorBrush x:Key="BlueViolet" Color="#636FF4"/>
+            <SolidColorBrush x:Key="PurpleLight" Color="#8B5CF2"/>
+
+            <!-- ============================================ -->
+            <!-- DARK MODE COLORS                             -->
+            <!-- ============================================ -->
+            <SolidColorBrush x:Key="WindowBgDark" Color="#202020"/>
+            <SolidColorBrush x:Key="SidebarBgDark" Color="#2D2D2D"/>
+            <SolidColorBrush x:Key="CardBgDark" Color="#2D2D2D"/>
+            <SolidColorBrush x:Key="MainTextDark" Color="#FFFFFF"/>
+            <SolidColorBrush x:Key="SubTextDark" Color="#A0A0A0"/>
+            <SolidColorBrush x:Key="AccentDark" Color="#0EA5E9"/>
+            <SolidColorBrush x:Key="BorderBrushDark" Color="#404040"/>
+            <SolidColorBrush x:Key="BorderDark" Color="#404040"/>
+            <SolidColorBrush x:Key="HoverBgDark" Color="#404040"/>
+            <SolidColorBrush x:Key="TotalCardBgDark" Color="#252525"/>
+            <SolidColorBrush x:Key="SuccessDark" Color="#22C55E"/>
+            <SolidColorBrush x:Key="WarningDark" Color="#EF4444"/>
+            <SolidColorBrush x:Key="ErrorDark" Color="#EF4444"/>
+            <SolidColorBrush x:Key="InfoDark" Color="#F97316"/>
+            <SolidColorBrush x:Key="PurpleDark" Color="#8B5CF6"/>
+            <SolidColorBrush x:Key="PinkDark" Color="#EC4899"/>
+            <SolidColorBrush x:Key="IndigoDark" Color="#6366F1"/>
+            <SolidColorBrush x:Key="TealDark" Color="#14B8A6"/>
+            <SolidColorBrush x:Key="VioletDark" Color="#A855F7"/>
+            <SolidColorBrush x:Key="FuchsiaDark" Color="#D946EF"/>
+            <SolidColorBrush x:Key="BlueLightDark" Color="#2585F0"/>
+            <SolidColorBrush x:Key="BlueMediumDark" Color="#3B82F6"/>
+            <SolidColorBrush x:Key="BlueVioletDark" Color="#636FF4"/>
+            <SolidColorBrush x:Key="PurpleLightDark" Color="#8B5CF2"/>
+
+            <!-- ============================================ -->
+            <!-- DYNAMIC RESOURCES                            -->
+            <!-- ============================================ -->
+            <SolidColorBrush x:Key="DynamicWindowBg" Color="#F1F5F9"/>
+            <SolidColorBrush x:Key="DynamicSidebarBg" Color="#FFFFFF"/>
+            <SolidColorBrush x:Key="DynamicCardBg" Color="#FFFFFF"/>
+            <SolidColorBrush x:Key="DynamicMainText" Color="#1E293B"/>
+            <SolidColorBrush x:Key="DynamicSubText" Color="#64748B"/>
+            <SolidColorBrush x:Key="DynamicAccent" Color="#0EA5E9"/>
+            <SolidColorBrush x:Key="DynamicBorderBrush" Color="#E2E8F0"/>
+            <SolidColorBrush x:Key="DynamicBorder" Color="#E2E8F0"/>
+            <SolidColorBrush x:Key="DynamicHoverBg" Color="#E2E8F0"/>
+            <SolidColorBrush x:Key="DynamicTotalCardBg" Color="#F8FAFC"/>
+            <SolidColorBrush x:Key="DynamicSuccess" Color="#22C55E"/>
+            <SolidColorBrush x:Key="DynamicWarning" Color="#EF4444"/>
+            <SolidColorBrush x:Key="DynamicError" Color="#EF4444"/>
+            <SolidColorBrush x:Key="DynamicInfo" Color="#F97316"/>
+            <SolidColorBrush x:Key="DynamicPurple" Color="#8B5CF6"/>
+            <SolidColorBrush x:Key="DynamicPink" Color="#EC4899"/>
+            <SolidColorBrush x:Key="DynamicIndigo" Color="#6366F1"/>
+            <SolidColorBrush x:Key="DynamicTeal" Color="#14B8A6"/>
+            <SolidColorBrush x:Key="DynamicViolet" Color="#A855F7"/>
+            <SolidColorBrush x:Key="DynamicFuchsia" Color="#D946EF"/>
+            <SolidColorBrush x:Key="DynamicBlueLight" Color="#2585F0"/>
+            <SolidColorBrush x:Key="DynamicBlueMedium" Color="#3B82F6"/>
+            <SolidColorBrush x:Key="DynamicBlueViolet" Color="#636FF4"/>
+            <SolidColorBrush x:Key="DynamicPurpleLight" Color="#8B5CF2"/>
+
+            <!-- ============================================ -->
+            <!-- GRADIENTS (ALL IN App.xaml)                  -->
+            <!-- ============================================ -->
+            <LinearGradientBrush x:Key="AccentGradient" StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#0EA5E9" Offset="0"/>
+                <GradientStop Color="#0284C7" Offset="1"/>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="StopGradient" StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#EF4444" Offset="0"/>
+                <GradientStop Color="#DC2626" Offset="1"/>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="ResumeGradient" StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#F59E0B" Offset="0"/>
+                <GradientStop Color="#D97706" Offset="1"/>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="SuccessGradient" StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#22C55E" Offset="0"/>
+                <GradientStop Color="#16A34A" Offset="1"/>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="SpinnerGradient" StartPoint="0,0" EndPoint="1,0">
+                <GradientStop Color="#0EA5E9" Offset="0"/>
+                <GradientStop Color="#3B82F6" Offset="0.5"/>
+                <GradientStop Color="#8B5CF2" Offset="1"/>
+            </LinearGradientBrush>
+
+            <!-- ============================================ -->
+            <!-- FLOW DIRECTION & LANGUAGE                    -->
+            <!-- ============================================ -->
+            <FlowDirection x:Key="ApplicationFlowDirection">LeftToRight</FlowDirection>
+
+            <!-- ============================================ -->
+            <!-- EFFECTS                                      -->
+            <!-- ============================================ -->
+            <DropShadowEffect x:Key="CardShadow" BlurRadius="15" ShadowDepth="0" Opacity="0.08" Color="#000000"/>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

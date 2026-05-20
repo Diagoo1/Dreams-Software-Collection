@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- ✅ تمت إزالة استيراد SixLabors.ImageSharp.props -->
+  <Import Project="packages\Costura.Fody.6.1.0\build\Costura.Fody.props" Condition="Exists('packages\Costura.Fody.6.1.0\build\Costura.Fody.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5DAAE426-967A-4BDC-8793-3B9DBF260967}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Dreams</RootNamespace>
+    <AssemblyName>Dreams</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <LangVersion>latest</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Assets\Icons\Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BlackSharp.Core, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\BlackSharp.Core.1.0.7\lib\net472\BlackSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CommunityToolkit.HighPerformance, Version=8.4.0.0, Culture=neutral, PublicKeyToken=4aff67a105548ee2, processorArchitecture=MSIL">
+      <HintPath>packages\CommunityToolkit.HighPerformance.8.4.2\lib\netstandard2.0\CommunityToolkit.HighPerformance.dll</HintPath>
+    </Reference>
+    <Reference Include="Costura, Version=6.1.0.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
+      <HintPath>packages\Costura.Fody.6.1.0\lib\netstandard2.0\Costura.dll</HintPath>
+    </Reference>
+    <Reference Include="DiskInfoToolkit, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\DiskInfoToolkit.1.1.2\lib\net472\DiskInfoToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ExCSS, Version=4.3.1.0, Culture=neutral, PublicKeyToken=bdbe16be9b936b9a, processorArchitecture=MSIL">
+      <HintPath>packages\ExCSS.4.3.1\lib\net48\ExCSS.dll</HintPath>
+    </Reference>
+    <Reference Include="GLWpfControl, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\OpenTK.GLWpfControl.3.3.0\lib\net452\GLWpfControl.dll</HintPath>
+    </Reference>
+    <Reference Include="HarfBuzzSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>packages\HarfBuzzSharp.8.3.1.3\lib\net462\HarfBuzzSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="HidSharp, Version=2.6.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HidSharp.2.6.4\lib\net35\HidSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreHardwareMonitorLib">
+      <HintPath>..\..\source\repos\Dreams Software Installation\packages\LibreHardwareMonitorLib.0.9.6\ref\net472\LibreHardwareMonitorLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.7, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.10.0.7\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.HashCode.6.0.0\lib\net462\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenHardwareMonitorLib, Version=1.0.9513.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\source\repos\Dreams Software Installation\packages\OpenHardwareMonitorLib.1.0.9513\lib\net472\OpenHardwareMonitorLib.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=3.3.1.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>packages\OpenTK.3.3.1\lib\net20\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="RAMSPDToolkit-NDD, Version=1.4.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\RAMSPDToolkit-NDD.1.4.2\lib\net472\RAMSPDToolkit-NDD.dll</HintPath>
+    </Reference>
+    <Reference Include="ShimSkiaSharp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=dafe96fe6c845a74, processorArchitecture=MSIL">
+      <HintPath>packages\ShimSkiaSharp.4.9.0\lib\net461\ShimSkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Svg.Custom, Version=4.9.0.0, Culture=neutral, PublicKeyToken=dafe96fe6c845a74, processorArchitecture=MSIL">
+      <HintPath>packages\Svg.Custom.4.9.0\lib\netstandard2.0\Svg.Custom.dll</HintPath>
+    </Reference>
+    <Reference Include="Svg.Model, Version=4.9.0.0, Culture=neutral, PublicKeyToken=dafe96fe6c845a74, processorArchitecture=MSIL">
+      <HintPath>packages\Svg.Model.4.9.0\lib\net461\Svg.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Svg.SceneGraph, Version=4.9.0.0, Culture=neutral, PublicKeyToken=dafe96fe6c845a74, processorArchitecture=MSIL">
+      <HintPath>packages\Svg.SceneGraph.4.9.0\lib\net461\Svg.SceneGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.CodeDom, Version=10.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.CodeDom.10.0.2\lib\net462\System.CodeDom.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.EventLog, Version=10.0.0.8, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.EventLog.10.0.8\lib\net462\System.Diagnostics.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.ServiceProcess.ServiceController, Version=10.0.0.8, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.ServiceProcess.ServiceController.10.0.8\lib\net462\System.ServiceProcess.ServiceController.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.AccessControl, Version=10.0.0.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.AccessControl.10.0.3\lib\net462\System.Threading.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=10.0.0.7, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Channels.10.0.7\lib\net462\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Dataflow, Version=10.0.0.7, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Dataflow.10.0.7\lib\net462\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.6.3\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Wpf.Ui, Version=4.3.0.0, Culture=neutral, PublicKeyToken=11f9f5cc97b3ffd6, processorArchitecture=MSIL">
+      <HintPath>packages\WPF-UI.4.3.0\lib\net472\Wpf.Ui.dll</HintPath>
+    </Reference>
+    <Reference Include="Wpf.Ui.Abstractions, Version=4.3.0.0, Culture=neutral, PublicKeyToken=11f9f5cc97b3ffd6, processorArchitecture=MSIL">
+      <HintPath>packages\WPF-UI.Abstractions.4.3.0\lib\net472\Wpf.Ui.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Pages\DnsPage.xaml.cs">
+      <DependentUpon>DnsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OnlinePage.xaml.cs">
+      <DependentUpon>OnlinePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\ThemeManager.cs" />
+    <Compile Include="Windows\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\TrayManager.cs" />
+    <Compile Include="Windows\TrayMenu.xaml.cs">
+      <DependentUpon>TrayMenu.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Lang\Lang-AR.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Lang\Lang-EN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Lang\Lang-ES.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Lang\Lang-FR.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Lang\Lang-RU.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Pages\DnsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\InstallPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\OnlinePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\OptimizePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TweaksPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\TrayMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pages\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InstallPage.xaml.cs">
+      <DependentUpon>InstallPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OptimizePage.xaml.cs">
+      <DependentUpon>OptimizePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TweaksPage.xaml.cs">
+      <DependentUpon>TweaksPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <Resource Include="Fonts\AR-Font.ttf" />
+    <Resource Include="Fonts\EN-Font.ttf" />
+    <Resource Include="Fonts\ES-Font.ttf" />
+    <Resource Include="Fonts\FR-Font.ttf" />
+    <Resource Include="Fonts\RU-Font.ttf" />
+    <None Include="OpenTK.dll.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Avatars\Avatar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Icons\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Icons\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FodyWeavers.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\IconsOnline\ABDownloadManager.ABDownloadManager.png" />
+    <Resource Include="Assets\IconsOnline\AdrienAllard.FileConverter.png" />
+    <Resource Include="Assets\IconsOnline\AmN.yasb.png" />
+    <Resource Include="Assets\IconsOnline\AntibodySoftware.WizTree.png" />
+    <Resource Include="Assets\IconsOnline\Balena.Etcher.png" />
+    <Resource Include="Assets\IconsOnline\Bambulab.Bambustudio.png" />
+    <Resource Include="Assets\IconsOnline\Creality.CrealityPrint.png" />
+    <Resource Include="Assets\IconsOnline\ExpressVPN.ExpressVPN.png" />
+    <Resource Include="Assets\IconsOnline\Fastfetch-cli.Fastfetch.png" />
+    <Resource Include="Assets\IconsOnline\Flow-Launcher.Flow-Launcher.png" />
+    <Resource Include="Assets\IconsOnline\GeekUninstaller.GeekUninstaller.png" />
+    <Resource Include="Assets\IconsOnline\Ghisler.TotalCommander.png" />
+    <Resource Include="Assets\IconsOnline\IPVanish.IPVanish.png" />
+    <Resource Include="Assets\IconsOnline\Klocman.BulkCrapUninstaller.png" />
+    <Resource Include="Assets\IconsOnline\Logitech.GHUB.png" />
+    <Resource Include="Assets\IconsOnline\M2Team.NanaZip.png" />
+    <Resource Include="Assets\IconsOnline\Malwarebytes.Malwarebytes.png" />
+    <Resource Include="Assets\IconsOnline\Microsoft.Office.png" />
+    <Resource Include="Assets\IconsOnline\Microsoft.Sysinternals.Autoruns.png" />
+    <Resource Include="Assets\IconsOnline\MullvadVPN.MullvadVPN.png" />
+    <Resource Include="Assets\IconsOnline\Notion.Notion.png" />
+    <Resource Include="Assets\IconsOnline\OpenVPNTechnologies.OpenVPN.png" />
+    <Resource Include="Assets\IconsOnline\PrivateInternetAccess.PrivateInternetAccess.png" />
+    <Resource Include="Assets\IconsOnline\Proton.ProtonVPN.png" />
+    <Resource Include="Assets\IconsOnline\Rainmeter.Rainmeter.png" />
+    <Resource Include="Assets\IconsOnline\RamenSoftware.Windhawk.png" />
+    <Resource Include="Assets\IconsOnline\RevoUninstaller.RevoUninstaller.png" />
+    <Resource Include="Assets\IconsOnline\rocksdanister.LivelyWallpaper.png" />
+    <Resource Include="Assets\IconsOnline\SoftDeluxe.FreeDownloadManager.png" />
+    <Resource Include="Assets\IconsOnline\SoftFever.OrcaSlicer.png" />
+    <Resource Include="Assets\IconsOnline\SteelSeries.GG.png" />
+    <Resource Include="Assets\IconsOnline\StefanSundin.Superf4.png" />
+    <Resource Include="Assets\IconsOnline\Surfshark.Surfshark.png" />
+    <Resource Include="Assets\IconsOnline\Tailscale.Tailscale.png" />
+    <Resource Include="Assets\IconsOnline\TGRMNSoftware.BulkRenameUtility.png" />
+    <Resource Include="Assets\IconsOnline\Wagnardsoft.DisplayDriverUninstaller.png" />
+    <Resource Include="Assets\IconsOnline\WhirlwindFX.SignalRgb.png" />
+    <Resource Include="Assets\IconsOnline\Windscribe.Windscribe.png" />
+    <Resource Include="Assets\IconsOnline\WinMerge.WinMerge.png" />
+    <Resource Include="Assets\IconsOnline\xanderfrangos.twinkletray.png" />
+    <Resource Include="Assets\IconsOnline\ZeroTier.ZeroTierOne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\IconsOnline\1Password.1Password.png" />
+    <Resource Include="Assets\IconsOnline\7zip.7zip.png" />
+    <Resource Include="Assets\IconsOnline\AIMP.AIMP.png" />
+    <Resource Include="Assets\IconsOnline\AnyDesk.AnyDesk.png" />
+    <Resource Include="Assets\IconsOnline\ArduinoSA.IDE.stable.png" />
+    <Resource Include="Assets\IconsOnline\astral-sh.uv.png" />
+    <Resource Include="Assets\IconsOnline\Audacity.Audacity.png" />
+    <Resource Include="Assets\IconsOnline\Bitwarden.Bitwarden.png" />
+    <Resource Include="Assets\IconsOnline\BlenderFoundation.Blender.png" />
+    <Resource Include="Assets\IconsOnline\Blizzard.BattleNet.png" />
+    <Resource Include="Assets\IconsOnline\Brave.Brave.png" />
+    <Resource Include="Assets\IconsOnline\Brave.Brave.Nightly.png" />
+    <Resource Include="Assets\IconsOnline\Cemu.Cemu.png" />
+    <Resource Include="Assets\IconsOnline\CPUID.HWMonitor.png" />
+    <Resource Include="Assets\IconsOnline\Cryptomator.Cryptomator.png" />
+    <Resource Include="Assets\IconsOnline\Dashlane.Dashlane.png" />
+    <Resource Include="Assets\IconsOnline\Deluge.Deluge.png" />
+    <Resource Include="Assets\IconsOnline\Discord.Discord.png" />
+    <Resource Include="Assets\IconsOnline\Docker.DockerDesktop.png" />
+    <Resource Include="Assets\IconsOnline\dotPDN.PaintDotNet.png" />
+    <Resource Include="Assets\IconsOnline\Dropbox.Dropbox.png" />
+    <Resource Include="Assets\IconsOnline\ElectronicArts.EADesktop.png" />
+    <Resource Include="Assets\IconsOnline\eloston.ungoogled-chromium.png" />
+    <Resource Include="Assets\IconsOnline\EpicGames.EpicGamesLauncher.png" />
+    <Resource Include="Assets\IconsOnline\Eugeny.Tabby.png" />
+    <Resource Include="Assets\IconsOnline\FilesCommunity.Files.png" />
+    <Resource Include="Assets\IconsOnline\FileZilla.FileZilla.png" />
+    <Resource Include="Assets\IconsOnline\Fishstrap.Fishstrap.png" />
+    <Resource Include="Assets\IconsOnline\FxSound.FxSound.png" />
+    <Resource Include="Assets\IconsOnline\GIMP.GIMP.2.png" />
+    <Resource Include="Assets\IconsOnline\Git.Git.png" />
+    <Resource Include="Assets\IconsOnline\GitHub.GitHubDesktop.png" />
+    <Resource Include="Assets\IconsOnline\GoLang.Go.png" />
+    <Resource Include="Assets\IconsOnline\Google.Chrome.png" />
+    <Resource Include="Assets\IconsOnline\Guilded.Guilded.png" />
+    <Resource Include="Assets\IconsOnline\Guru3D.Afterburner.png" />
+    <Resource Include="Assets\IconsOnline\Hibbiki.Chromium.png" />
+    <Resource Include="Assets\IconsOnline\hluk.copyq.png" />
+    <Resource Include="Assets\IconsOnline\Inkscape.Inkscape.png" />
+    <Resource Include="Assets\IconsOnline\IrfanSkiljan.IrfanView.png" />
+    <Resource Include="Assets\IconsOnline\JanDeDobbeleer.OhMyPosh.png" />
+    <Resource Include="Assets\IconsOnline\AppWork.JDownloader.png" />
+    <Resource Include="Assets\IconsOnline\KDE.Kate.png" />
+    <Resource Include="Assets\IconsOnline\KDE.Krita.png" />
+    <Resource Include="Assets\IconsOnline\Kitware.CMake.png" />
+    <Resource Include="Assets\IconsOnline\LastPass.LastPass.png" />
+    <Resource Include="Assets\IconsOnline\LibreWolf.LibreWolf.png" />
+    <Resource Include="Assets\IconsOnline\LizardByte.Sunshine.png" />
+    <Resource Include="Assets\IconsOnline\MedalB.V.Medal.png" />
+    <Resource Include="Assets\IconsOnline\Microsoft.PowerToys.png" />
+    <Resource Include="Assets\IconsOnline\Microsoft.Skype.png" />
+    <Resource Include="Assets\IconsOnline\Microsoft.Teams.png" />
+    <Resource Include="Assets\IconsOnline\Microsoft.VisualStudio.2022.png" />
+    <Resource Include="Assets\IconsOnline\Microsoft.VisualStudioCode.Insiders.png" />
+    <Resource Include="Assets\IconsOnline\Microsoft.VisualStudioCode.png" />
+    <Resource Include="Assets\IconsOnline\Modrinth.ModrinthApp.png" />
+    <Resource Include="Assets\IconsOnline\Mojang.MinecraftLauncher.png" />
+    <Resource Include="Assets\IconsOnline\MoonlightGameStreamingProject.Moonlight.png" />
+    <Resource Include="Assets\IconsOnline\Mozilla.Firefox.MSIX.Nightly.png" />
+    <Resource Include="Assets\IconsOnline\Mozilla.Firefox.png" />
+    <Resource Include="Assets\IconsOnline\Neovim.Neovim.png" />
+    <Resource Include="Assets\IconsOnline\NordSecurity.NordVPN.png" />
+    <Resource Include="Assets\IconsOnline\Notepad++.Notepad++.png" />
+    <Resource Include="Assets\IconsOnline\NVIDIA.GeForceNOW.png" />
+    <Resource Include="Assets\IconsOnline\OBSProject.OBSStudio.png" />
+    <Resource Include="Assets\IconsOnline\OpenJS.NodeJS.png" />
+    <Resource Include="Assets\IconsOnline\OpenRGB.OpenRGB.png" />
+    <Resource Include="Assets\IconsOnline\OpenWhisperSystems.Signal.png" />
+    <Resource Include="Assets\IconsOnline\Opera.Opera.png" />
+    <Resource Include="Assets\IconsOnline\Opera.OperaGX.png" />
+    <Resource Include="Assets\IconsOnline\Oracle.VirtualBox.png" />
+    <Resource Include="Assets\IconsOnline\Oven-sh.Bun.png" />
+    <Resource Include="Assets\IconsOnline\Parsec.Parsec.png" />
+    <Resource Include="Assets\IconsOnline\pizzaboxer.Bloxstrap.png" />
+    <Resource Include="Assets\IconsOnline\Playnite.Playnite.png" />
+    <Resource Include="Assets\IconsOnline\Postman.Postman.png" />
+    <Resource Include="Assets\IconsOnline\PrismLauncher.PrismLauncher.png" />
+    <Resource Include="Assets\IconsOnline\PuTTY.PuTTY.png" />
+    <Resource Include="Assets\IconsOnline\Python.Python.3.13.png" />
+    <Resource Include="Assets\IconsOnline\qBittorrent.qBittorrent.png" />
+    <Resource Include="Assets\IconsOnline\RARLab.WinRAR.png" />
+    <Resource Include="Assets\IconsOnline\Rem0o.FanControl.png" />
+    <Resource Include="Assets\IconsOnline\Rufus.Rufus.png" />
+    <Resource Include="Assets\IconsOnline\RustDesk.RustDesk.png" />
+    <Resource Include="Assets\IconsOnline\Rustlang.Rust.MSVC.png" />
+    <Resource Include="Assets\IconsOnline\ShareX.ShareX.png" />
+    <Resource Include="Assets\IconsOnline\SlackTechnologies.Slack.png" />
+    <Resource Include="Assets\IconsOnline\Spotify.Spotify.png" />
+    <Resource Include="Assets\IconsOnline\SyncThing.SyncThing.png" />
+    <Resource Include="Assets\IconsOnline\TeamViewer.TeamViewer.png" />
+    <Resource Include="Assets\IconsOnline\TechPowerUp.GPU-Z.png" />
+    <Resource Include="Assets\IconsOnline\Telegram.TelegramDesktop.png" />
+    <Resource Include="Assets\IconsOnline\TorProject.TorBrowser.png" />
+    <Resource Include="Assets\IconsOnline\Transmission.Transmission.png" />
+    <Resource Include="Assets\IconsOnline\Ultimaker.Cura.png" />
+    <Resource Include="Assets\IconsOnline\Unity.UnityHub.png" />
+    <Resource Include="Assets\IconsOnline\Valve.Steam.png" />
+    <Resource Include="Assets\IconsOnline\Vencord.Vesktop.png" />
+    <Resource Include="Assets\IconsOnline\VideoLAN.VLC.png" />
+    <Resource Include="Assets\IconsOnline\vim.vim.nightly.png" />
+    <Resource Include="Assets\IconsOnline\Vivaldi.Vivaldi.png" />
+    <Resource Include="Assets\IconsOnline\voidtools.Everything.png" />
+    <Resource Include="Assets\IconsOnline\WhatsApp_icon.png" />
+    <Resource Include="Assets\IconsOnline\WireGuard.WireGuard.png" />
+    <Resource Include="Assets\IconsOnline\WiresharkFoundation.Wireshark.png" />
+    <Resource Include="Assets\IconsOnline\Zen-Team.Zen-Browser.png" />
+    <Resource Include="Assets\IconsOnline\Zoom.Zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\IconsOnline\Adobe.Acrobat.Reader.64-bit.png" />
+    <Resource Include="Assets\IconsOnline\BleachBit.BleachBit.png" />
+    <Resource Include="Assets\IconsOnline\CPUID.CPU-Z.png" />
+    <Resource Include="Assets\IconsOnline\CrystalDewWorld.CrystalDiskInfo.png" />
+    <Resource Include="Assets\IconsOnline\DBeaver.DBeaver.png" />
+    <Resource Include="Assets\IconsOnline\EclipseAdoptium.Temurin.17.JDK.png" />
+    <Resource Include="Assets\IconsOnline\Giorgiotani.Peazip.png" />
+    <Resource Include="Assets\IconsOnline\GlassWire.GlassWire.png" />
+    <Resource Include="Assets\IconsOnline\GOG.Galaxy.png" />
+    <Resource Include="Assets\IconsOnline\Google.AndroidStudio.png" />
+    <Resource Include="Assets\IconsOnline\Google.YouTubeMusic.png" />
+    <Resource Include="Assets\IconsOnline\Greenshot.Greenshot.png" />
+    <Resource Include="Assets\IconsOnline\HandBrake.HandBrake.png" />
+    <Resource Include="Assets\IconsOnline\KeePassXCTeam.KeePassXC.png" />
+    <Resource Include="Assets\IconsOnline\Logseq.Logseq.png" />
+    <Resource Include="Assets\IconsOnline\Microsoft.DotNet.SDK.8.png" />
+    <Resource Include="Assets\IconsOnline\Microsoft.Edge.png" />
+    <Resource Include="Assets\IconsOnline\Microsoft.XboxApp.png" />
+    <Resource Include="Assets\IconsOnline\MongoDB.Compass.png" />
+    <Resource Include="Assets\IconsOnline\MPC-BE.MPC-BE.png" />
+    <Resource Include="Assets\IconsOnline\Obsidian.Obsidian.png" />
+    <Resource Include="Assets\IconsOnline\Oracle.MySQL.png" />
+    <Resource Include="Assets\IconsOnline\Piriform.Recuva.png" />
+    <Resource Include="Assets\IconsOnline\Plex.Plex.png" />
+    <Resource Include="Assets\IconsOnline\PostgreSQL.PostgreSQL.png" />
+    <Resource Include="Assets\IconsOnline\REALiX.HWiNFO.png" />
+    <Resource Include="Assets\IconsOnline\SumatraPDF.SumatraPDF.png" />
+    <Resource Include="Assets\IconsOnline\TheBrowserCompany.Arc.png" />
+    <Resource Include="Assets\IconsOnline\TheDocumentFoundation.LibreOffice.png" />
+    <Resource Include="Assets\IconsOnline\Ubisoft.Connect.png" />
+    <Resource Include="Assets\IconsOnline\Ventoy.Ventoy.png" />
+    <Resource Include="Assets\IconsOnline\WinSCP.WinSCP.png" />
+    <Resource Include="Assets\IconsOnline\XBMCFoundation.Kodi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\IconsOnline\WebTorrent.WebTorrentDesktop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\IconsOnline\SublimeHQ.SublimeText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\IconsOnline\Razer.RazerSynapse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\IconsOnline\Prusa3D.PrusaSlicer.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\Fody.6.9.3\build\Fody.targets" Condition="Exists('packages\Fody.6.9.3\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Fody.6.9.3\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Fody.6.9.3\build\Fody.targets'))" />
+    <Error Condition="!Exists('packages\Costura.Fody.6.1.0\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Costura.Fody.6.1.0\build\Costura.Fody.props'))" />
+    <Error Condition="!Exists('packages\Costura.Fody.6.1.0\build\Costura.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Costura.Fody.6.1.0\build\Costura.Fody.targets'))" />
+    <!-- ✅ تمت إزالة أخطاء SixLabors.ImageSharp -->
+    <Error Condition="!Exists('packages\SkiaSharp.NativeAssets.macOS.3.119.2\build\net462\SkiaSharp.NativeAssets.macOS.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SkiaSharp.NativeAssets.macOS.3.119.2\build\net462\SkiaSharp.NativeAssets.macOS.targets'))" />
+    <Error Condition="!Exists('packages\SkiaSharp.NativeAssets.Win32.3.119.2\build\net462\SkiaSharp.NativeAssets.Win32.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\SkiaSharp.NativeAssets.Win32.3.119.2\build\net462\SkiaSharp.NativeAssets.Win32.targets'))" />
+  </Target>
+  <Import Project="packages\Costura.Fody.6.1.0\build\Costura.Fody.targets" Condition="Exists('packages\Costura.Fody.6.1.0\build\Costura.Fody.targets')" />
+  <!-- ✅ تمت إزالة استيراد SixLabors.ImageSharp.targets -->
+  <Import Project="packages\SkiaSharp.NativeAssets.macOS.3.119.2\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('packages\SkiaSharp.NativeAssets.macOS.3.119.2\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />
+  <Import Project="packages\SkiaSharp.NativeAssets.Win32.3.119.2\build\net462\SkiaSharp.NativeAssets.Win32.targets" Condition="Exists('packages\SkiaSharp.NativeAssets.Win32.3.119.2\build\net462\SkiaSharp.NativeAssets.Win32.targets')" />
+</Project>

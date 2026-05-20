@@ -1,0 +1,1589 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!-- ==================== UI DIRECTION ==================== -->
+    <FlowDirection x:Key="ApplicationFlowDirection">LeftToRight</FlowDirection>
+
+    <!-- ==================== HOMEPAGE ==================== -->
+    <sys:String x:Key="SystemDashboard">System Dashboard</sys:String>
+    <sys:String x:Key="ShortName">Dreams</sys:String>
+    <sys:String x:Key="Dashboard">Dashboard</sys:String>
+    <sys:String x:Key="Installer">Installer</sys:String>
+    <sys:String x:Key="AppStore">App Store</sys:String>
+    <sys:String x:Key="DNS">DNS</sys:String>
+    <sys:String x:Key="Tweaks">Tweaks</sys:String>
+    <sys:String x:Key="Optimize">Optimize</sys:String>
+    <sys:String x:Key="About">About</sys:String>
+    <sys:String x:Key="AppName">Dreams</sys:String>
+    <sys:String x:Key="Exit">Exit</sys:String>
+    <sys:String x:Key="Settings">Settings</sys:String>
+    <sys:String x:Key="MemoryRAM">RAM Memory</sys:String>
+    <sys:String x:Key="SystemDisk">System Disk</sys:String>
+    <sys:String x:Key="CPU">Processor</sys:String>
+    <sys:String x:Key="GraphicCard">Graphics Card</sys:String>
+    <sys:String x:Key="Display">Display</sys:String>
+    <sys:String x:Key="SystemBIOS">System &amp; BIOS</sys:String>
+    <sys:String x:Key="OperatingSystem">Operating System</sys:String>
+    <sys:String x:Key="Used">Used</sys:String>
+    <sys:String x:Key="Total">Total</sys:String>
+    <sys:String x:Key="Free">Free</sys:String>
+    <sys:String x:Key="MaxSpeed">Max Speed:</sys:String>
+    <sys:String x:Key="Cores">Cores:</sys:String>
+    <sys:String x:Key="Threads">Threads:</sys:String>
+    <sys:String x:Key="Temp">Temperature:</sys:String>
+    <sys:String x:Key="VRAM">Video Memory:</sys:String>
+    <sys:String x:Key="Resolution">Resolution:</sys:String>
+    <sys:String x:Key="RefreshRate">Refresh Rate:</sys:String>
+    <sys:String x:Key="ColorDepth">Color Depth:</sys:String>
+    <sys:String x:Key="Manufacturer">Manufacturer:</sys:String>
+    <sys:String x:Key="SystemModel">System Model:</sys:String>
+    <sys:String x:Key="BoardModel">Motherboard Model:</sys:String>
+    <sys:String x:Key="BoardSerial">Motherboard Serial:</sys:String>
+    <sys:String x:Key="BIOSSerial">BIOS Serial:</sys:String>
+    <sys:String x:Key="BIOSDate">BIOS Date:</sys:String>
+    <sys:String x:Key="OSVersion">OS Version:</sys:String>
+    <sys:String x:Key="HostName">Host Name:</sys:String>
+    <sys:String x:Key="ActiveUser">Active User:</sys:String>
+    <sys:String x:Key="MACAddress">MAC Address:</sys:String>
+    <sys:String x:Key="IPAddress">IP Address:</sys:String>
+    <sys:String x:Key="InstallApps">Install Applications</sys:String>
+    <sys:String x:Key="InitializingDashboard">Initializing system dashboard...</sys:String>
+    <sys:String x:Key="ByTarekSadek">Designed &amp; Developed by: Tarek Sadek</sys:String>
+    <sys:String x:Key="GoodMorning">Good Morning</sys:String>
+    <sys:String x:Key="GoodAfternoon">Good Afternoon</sys:String>
+    <sys:String x:Key="GoodEvening">Good Evening</sys:String>
+    <sys:String x:Key="PrimaryMonitor">Primary Monitor</sys:String>
+    <sys:String x:Key="SecondaryGPU">Secondary Graphics Card</sys:String>
+    <sys:String x:Key="AlwaysOnTop">Always on Top</sys:String>
+    <sys:String x:Key="CraftedBy">By</sys:String>
+    <sys:String x:Key="SoftwareEngineer">Software Engineer</sys:String>
+    <sys:String x:Key="AlwaysOnTopOn">Always on Top: ON ✓</sys:String>
+    <sys:String x:Key="AlwaysOnTopOff">Always on Top: OFF</sys:String>
+    <sys:String x:Key="Optimizer">Optimizer</sys:String>
+
+    <!-- ==================== UNITS ==================== -->
+    <sys:String x:Key="GB">GB</sys:String>
+    <sys:String x:Key="GHz">GHz</sys:String>
+    <sys:String x:Key="Hz">Hz</sys:String>
+    <sys:String x:Key="DegreeSymbol">°</sys:String>
+    <sys:String x:Key="Celsius">Celsius</sys:String>
+    <sys:String x:Key="TempCelsius">°C</sys:String>
+    <sys:String x:Key="MHz">MHz</sys:String>
+    <sys:String x:Key="Bits">bit(s)</sys:String>
+    <sys:String x:Key="KB">KB</sys:String>
+    <sys:String x:Key="MB">MB</sys:String>
+    <sys:String x:Key="TB">TB</sys:String>
+    <sys:String x:Key="UnitB">B</sys:String>
+    <sys:String x:Key="UnitKB">KB</sys:String>
+    <sys:String x:Key="UnitMB">MB</sys:String>
+    <sys:String x:Key="UnitGB">GB</sys:String>
+    <sys:String x:Key="UnitTB">TB</sys:String>
+    <sys:String x:Key="Items">Items</sys:String>
+    <sys:String x:Key="Programs">Programs</sys:String>
+    <sys:String x:Key="StartupItems">Startup Items</sys:String>
+    <sys:String x:Key="InstalledApps">Installed App</sys:String>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <sys:String x:Key="AM">AM</sys:String>
+    <sys:String x:Key="PM">PM</sys:String>
+    <sys:String x:Key="DateFormat">dddd, MMMM dd, yyyy</sys:String>
+    <sys:String x:Key="TimeFormat">hh:mm:ss tt</sys:String>
+    <sys:String x:Key="ResolutionFormat">{0} x {1}</sys:String>
+    <sys:String x:Key="ResolutionSeparator">x</sys:String>
+    <sys:String x:Key="OSVersionFormat">Version {0} (Build {1}.{2})</sys:String>
+    <sys:String x:Key="OSVersionPrefix">Version</sys:String>
+    <sys:String x:Key="OSBuildPrefix">Build</sys:String>
+
+    <!-- ==================== DAY & MONTH NAMES ==================== -->
+    <sys:String x:Key="Saturday">Saturday</sys:String>
+    <sys:String x:Key="Sunday">Sunday</sys:String>
+    <sys:String x:Key="Monday">Monday</sys:String>
+    <sys:String x:Key="Tuesday">Tuesday</sys:String>
+    <sys:String x:Key="Wednesday">Wednesday</sys:String>
+    <sys:String x:Key="Thursday">Thursday</sys:String>
+    <sys:String x:Key="Friday">Friday</sys:String>
+    <sys:String x:Key="January">January</sys:String>
+    <sys:String x:Key="February">February</sys:String>
+    <sys:String x:Key="March">March</sys:String>
+    <sys:String x:Key="April">April</sys:String>
+    <sys:String x:Key="May">May</sys:String>
+    <sys:String x:Key="June">June</sys:String>
+    <sys:String x:Key="July">July</sys:String>
+    <sys:String x:Key="August">August</sys:String>
+    <sys:String x:Key="September">September</sys:String>
+    <sys:String x:Key="October">October</sys:String>
+    <sys:String x:Key="November">November</sys:String>
+    <sys:String x:Key="December">December</sys:String>
+
+    <!-- ==================== SETTINGS PAGE ==================== -->
+    <sys:String x:Key="AppSettings">Application Settings</sys:String>
+    <sys:String x:Key="General">General</sys:String>
+    <sys:String x:Key="Language">Language</sys:String>
+    <sys:String x:Key="ChoosePreferredInterface">Choose your preferred interface</sys:String>
+    <sys:String x:Key="Appearance">Appearance</sys:String>
+    <sys:String x:Key="DarkMode">Dark Mode</sys:String>
+    <sys:String x:Key="GlobalTheme">Global Theme</sys:String>
+    <sys:String x:Key="WindowOpacity">Window Opacity</sys:String>
+    <sys:String x:Key="AdjustTransparency">Adjust the overall window transparency</sys:String>
+    <sys:String x:Key="System">System</sys:String>
+    <sys:String x:Key="RunAtStartup">Run at Startup</sys:String>
+    <sys:String x:Key="LaunchAutomatically">Launch Dreams automatically on boot</sys:String>
+    <sys:String x:Key="HardwareAcceleration">Hardware Acceleration</sys:String>
+    <sys:String x:Key="UseGPU">Use the graphics card for better performance</sys:String>
+    <sys:String x:Key="ApplyChanges">Apply Changes</sys:String>
+    <sys:String x:Key="ChangesSavedOnClose">Changes are saved when closing</sys:String>
+    <sys:String x:Key="DreamsSoftwareVersion">Dreams Software Version 3.0</sys:String>
+    <sys:String x:Key="EnglishUS">English</sys:String>
+    <sys:String x:Key="Arabic">Arabic</sys:String>
+    <sys:String x:Key="French">French</sys:String>
+    <sys:String x:Key="Spanish">Spanish</sys:String>
+    <sys:String x:Key="Russian">Russian</sys:String>
+    <sys:String x:Key="ReportBug">Report a bug</sys:String>
+
+    <!-- ==================== ABOUT PAGE ==================== -->
+    <sys:String x:Key="AboutDreams">About Dreams</sys:String>
+    <sys:String x:Key="DreamsSoftwareInstallation">Dreams Software Collection</sys:String>
+    <sys:String x:Key="VersionBuild">Version 3.0 | Build 20</sys:String>
+    <sys:String x:Key="ProfessionalSolution">A professional solution for silent and automated software installation. Optimized for speed, reliability, and efficiency.</sys:String>
+    <sys:String x:Key="Website">Website</sys:String>
+    <sys:String x:Key="Donate">Donate</sys:String>
+    <sys:String x:Key="Email">Email</sys:String>
+    <sys:String x:Key="MadeWithLove_Part1">Made with</sys:String>
+    <sys:String x:Key="MadeWithLove_Part2">love by</sys:String>
+    <sys:String x:Key="DeveloperName">Tarek Sadek</sys:String>
+    <sys:String x:Key="LeadDesigner">Lead UI Designer &amp; Developer</sys:String>
+    <sys:String x:Key="Activated">Activated</sys:String>
+    <sys:String x:Key="AllRightsReserved">| © 2026 All Rights Reserved</sys:String>
+    <sys:String x:Key="OK">OK</sys:String>
+    <sys:String x:Key="MinimizeToTray">Minimize to Tray</sys:String>
+    <sys:String x:Key="CloseToTrayDescription">Hide window instead of closing it</sys:String>
+
+    <!-- ==================== INSTALL PAGE ==================== -->
+    <sys:String x:Key="SoftwareInstaller">Software Installer</sys:String>
+    <sys:String x:Key="Selected">Selected</sys:String>
+    <sys:String x:Key="CurrentStatus">Current Status</sys:String>
+    <sys:String x:Key="ReadyToStart">Ready to start</sys:String>
+    <sys:String x:Key="StartInstallation">Start Installation</sys:String>
+    <sys:String x:Key="StopInstallation">Stop Installation</sys:String>
+    <sys:String x:Key="ResumeInstallation">Resume Installation</sys:String>
+    <sys:String x:Key="InstallingBtn">Installing...</sys:String>
+    <sys:String x:Key="Paused">Paused</sys:String>
+    <sys:String x:Key="InstallationCompleteTitle">Installation Complete!</sys:String>
+    <sys:String x:Key="InstallingApplication">Installing application</sys:String>
+    <sys:String x:Key="SelectAll">Select All</sys:String>
+    <sys:String x:Key="DeselectAll">Deselect All</sys:String>
+    <sys:String x:Key="SelectAllShort">Select All</sys:String>
+    <sys:String x:Key="InstallationCancelled">Installation Cancelled 🚫</sys:String>
+    <sys:String x:Key="Installing">Installing...</sys:String>
+    <sys:String x:Key="Installed">Installed ✔️</sys:String>
+    <sys:String x:Key="Failed">Failed</sys:String>
+    <sys:String x:Key="Pending">Pending</sys:String>
+    <sys:String x:Key="Queued">Queued</sys:String>
+    <sys:String x:Key="Removed">Removed</sys:String>
+    <sys:String x:Key="Waiting">Waiting</sys:String>
+    <sys:String x:Key="Downloading">Downloading...</sys:String>
+    <sys:String x:Key="Extracting">Extracting...</sys:String>
+    <sys:String x:Key="Skipped">Skipped</sys:String>
+    <sys:String x:Key="SuccessfullyInstalled">Successfully Installed</sys:String>
+    <sys:String x:Key="NoProgramsFound">No programs found</sys:String>
+    <sys:String x:Key="AddProgramFoldersTo">Add program folders to</sys:String>
+    <sys:String x:Key="TimeElapsed">Time Elapsed</sys:String>
+    <sys:String x:Key="InstallingXofY">Installing {0} of {1}</sys:String>
+    <sys:String x:Key="ProgressPercent">{0}% Complete</sys:String>
+    <sys:String x:Key="SelectAllTooltip">Select or deselect all applications</sys:String>
+    <sys:String x:Key="StartInstallationTooltip">Start installing selected applications</sys:String>
+    <sys:String x:Key="CleaningUp">Cleaning up temporary files...</sys:String>
+    <sys:String x:Key="VerifyingInstallation">Verifying installation...</sys:String>
+    <sys:String x:Key="AppsSelected">App(s) selected</sys:String>
+    <sys:String x:Key="InstallationCancelledByUser">Installation cancelled by user</sys:String>
+    <sys:String x:Key="InstallationCompletedSuccessfully">Installation completed successfully!</sys:String>
+    <sys:String x:Key="InstallationFailed">Installation failed</sys:String>
+    <sys:String x:Key="PleaseWaitInstallation">Please wait during installation...</sys:String>
+    <sys:String x:Key="ReadyToInstall">Ready to install</sys:String>
+    <sys:String x:Key="PreparingInstallation">Preparing installation...</sys:String>
+    <sys:String x:Key="Processing">Processing...</sys:String>
+    <sys:String x:Key="CompletingInstallation">Completing installation...</sys:String>
+    <sys:String x:Key="StartingInstallation">Starting installation...</sys:String>
+    <sys:String x:Key="InstallationPaused">Installation paused - Press resume to continue</sys:String>
+    <sys:String x:Key="InstallationResumed">Installation resumed</sys:String>
+    <sys:String x:Key="PressStartToBegin">Press start to begin installation</sys:String>
+    <sys:String x:Key="InstallationSuccess">Installation success</sys:String>
+    <sys:String x:Key="InstallationError">Installation error</sys:String>
+    <sys:String x:Key="FailedToInstall">Failed to install</sys:String>
+    <sys:String x:Key="PleaseSelectApplications">Please select at least one application to install</sys:String>
+    <sys:String x:Key="NoApplicationsSelected">No applications selected</sys:String>
+    <sys:String x:Key="InstallationAlreadyInProgress">Installation already in progress. Please wait or cancel the current installation.</sys:String>
+    <sys:String x:Key="InstallationNotInProgress">No installation currently in progress</sys:String>
+    <sys:String x:Key="FileNotFound">File not found</sys:String>
+    <sys:String x:Key="DownloadFailed">Download failed</sys:String>
+    <sys:String x:Key="ExtractionFailed">Extraction failed</sys:String>
+    <sys:String x:Key="UnableToStartInstallation">Unable to start installation process</sys:String>
+    <sys:String x:Key="InstallationProcessError">An error occurred during installation</sys:String>
+    <sys:String x:Key="ViewLogs">View Logs</sys:String>
+    <sys:String x:Key="ConfirmCancelInstallation">Cancel installation?</sys:String>
+    <sys:String x:Key="AreYouSureCancelInstallation">Are you sure you want to cancel the installation?\nThis will stop all ongoing installations.</sys:String>
+    <sys:String x:Key="InstallationCompleteMessage">All installations completed successfully!</sys:String>
+    <sys:String x:Key="SomeInstallationsFailed">Some installations failed</sys:String>
+    <sys:String x:Key="FailedApplicationsCount">The following applications were not installed:</sys:String>
+    <sys:String x:Key="StopInstallationTooltip">Stop the ongoing installation process</sys:String>
+    <sys:String x:Key="ResumeInstallationTooltip">Resume the paused installation</sys:String>
+    <sys:String x:Key="Initializing">Initializing...</sys:String>
+    <sys:String x:Key="DownloadingFile">Downloading file...</sys:String>
+    <sys:String x:Key="ExtractingArchive">Extracting archive...</sys:String>
+    <sys:String x:Key="RunningInstaller">Running installer...</sys:String>
+    <sys:String x:Key="AllCategories">All</sys:String>
+    <sys:String x:Key="Category_Compression">Compression</sys:String>
+    <sys:String x:Key="Category_Design">Design</sys:String>
+    <sys:String x:Key="Category_Drivers">Drivers</sys:String>
+    <sys:String x:Key="Category_Gaming">Gaming</sys:String>
+    <sys:String x:Key="Category_Internet">Internet</sys:String>
+    <sys:String x:Key="Category_Media">Media</sys:String>
+    <sys:String x:Key="Category_Office">Office</sys:String>
+    <sys:String x:Key="Category_PDF">PDF</sys:String>
+    <sys:String x:Key="Category_Security">Security</sys:String>
+    <sys:String x:Key="Category_System">System</sys:String>
+    <sys:String x:Key="Category_Tools">Tools</sys:String>
+    <sys:String x:Key="Category_Utilities">Utilities</sys:String>
+
+    <!-- ==================== OPTIMIZE PAGE ==================== -->
+    <sys:String x:Key="SystemOptimizer">System Optimizer</sys:String>
+    <sys:String x:Key="RAMUsage">RAM Usage</sys:String>
+    <sys:String x:Key="DiskSpace">Disk Space</sys:String>
+    <sys:String x:Key="StartupImpact">Startup Impact</sys:String>
+    <sys:String x:Key="Scanning">Scanning...</sys:String>
+    <sys:String x:Key="BOOST">BOOST</sys:String>
+    <sys:String x:Key="ANALYZE">ANALYZE</sys:String>
+    <sys:String x:Key="MANAGE">MANAGE</sys:String>
+    <sys:String x:Key="CleaningCategories">Cleaning Categories</sys:String>
+    <sys:String x:Key="SystemCleaner">System Cleaner</sys:String>
+    <sys:String x:Key="TemporaryFiles">Temporary Files</sys:String>
+    <sys:String x:Key="AppDataTemp">AppData Temp Files</sys:String>
+    <sys:String x:Key="EmptyRecycleBin">Empty Recycle Bin</sys:String>
+    <sys:String x:Key="DNSCache">DNS Cache</sys:String>
+    <sys:String x:Key="BrowserCleaner">Browser Cleaner</sys:String>
+    <sys:String x:Key="RegistryCleaner">Registry Cleaner</sys:String>
+    <sys:String x:Key="PrivacyCleaner">Privacy Cleaner</sys:String>
+    <sys:String x:Key="TOTALCLEANING">TOTAL CLEANING</sys:String>
+    <sys:String x:Key="RUNOPTIMIZATION">RUN OPTIMIZATION</sys:String>
+    <sys:String x:Key="CleaningInProgress">Cleaning in progress...</sys:String>
+    <sys:String x:Key="CleaningComplete">Cleaning complete!</sys:String>
+    <sys:String x:Key="SpaceFreed">Space freed:</sys:String>
+    <sys:String x:Key="ScanningComplete">Scan complete!</sys:String>
+    <sys:String x:Key="CleaningCancelled">⚠️ Cancelled</sys:String>
+    <sys:String x:Key="CleaningError">⚠️ Error</sys:String>
+    <sys:String x:Key="BoostingText">Boosting...</sys:String>
+    <sys:String x:Key="BoostedText">✅ Boosted!</sys:String>
+    <sys:String x:Key="Preparing">Preparing...</sys:String>
+    <sys:String x:Key="Complete">Complete!</sys:String>
+    <sys:String x:Key="Cancelled">Cancelled</sys:String>
+    <sys:String x:Key="Error">Error</sys:String>
+    <sys:String x:Key="CleaningSystem">Cleaning system...</sys:String>
+    <sys:String x:Key="CleaningBrowser">Cleaning browser...</sys:String>
+    <sys:String x:Key="CleaningApps">Cleaning applications...</sys:String>
+    <sys:String x:Key="CleaningRegistry">Cleaning registry...</sys:String>
+    <sys:String x:Key="CleaningPrivacy">Cleaning privacy...</sys:String>
+    <sys:String x:Key="NoCleanupItemsSelected">Please select at least one item to clean.</sys:String>
+    <sys:String x:Key="CleaningCompletedSuccess">Cleaning completed successfully, {0} freed</sys:String>
+    <sys:String x:Key="NoIssuesFound">No files were cleaned. All files were in use or protected.</sys:String>
+    <sys:String x:Key="ErrorTitle">Error</sys:String>
+    <sys:String x:Key="WarningTitle">Warning</sys:String>
+    <sys:String x:Key="InformationTitle">Information</sys:String>
+    <sys:String x:Key="QuestionTitle">Question</sys:String>
+    <sys:String x:Key="Cleaned">Cleaned</sys:String>
+    <sys:String x:Key="AlreadyOptimized">Already Optimized</sys:String>
+    <sys:String x:Key="QueueListTooltip">View install queue</sys:String>
+
+    <!-- Cleaner Items - System -->
+    <sys:String x:Key="TempFilesLogsCache">Temporary files, logs, and cache</sys:String>
+    <sys:String x:Key="MemoryDumps">Memory dump files</sys:String>
+    <sys:String x:Key="ChkdskFileFragments">Disk check file fragments</sys:String>
+    <sys:String x:Key="WindowsUpdateCache">Windows Update cache</sys:String>
+    <sys:String x:Key="WindowsLogFiles">Windows log files</sys:String>
+    <sys:String x:Key="WindowsEventTraceLogs">Windows event trace logs</sys:String>
+    <sys:String x:Key="StartMenuShortcuts">Start menu shortcuts</sys:String>
+    <sys:String x:Key="DesktopShortcuts">Desktop shortcuts</sys:String>
+    <sys:String x:Key="DriverInstallationLogs">Driver installation logs</sys:String>
+    <sys:String x:Key="WindowsDeliveryOptimization">Windows Delivery Optimization</sys:String>
+    <sys:String x:Key="WindowsNotifications">Windows notifications</sys:String>
+    <sys:String x:Key="NetworkDataUsage">Network data usage</sys:String>
+    <sys:String x:Key="WindowsWebCache">Windows web cache</sys:String>
+
+    <!-- Cleaner Items - Browser -->
+    <sys:String x:Key="ChromeEdgeFirefoxData">Chrome, Edge, and Firefox data</sys:String>
+    <sys:String x:Key="BrowserCache">Browser cache</sys:String>
+    <sys:String x:Key="BrowsingHistory">Browsing history</sys:String>
+    <sys:String x:Key="CookiesSiteData">Cookies and site data</sys:String>
+    <sys:String x:Key="DownloadHistory">Download history</sys:String>
+    <sys:String x:Key="SavedPasswords">Saved passwords</sys:String>
+    <sys:String x:Key="FormDataAutofill">Form data and autofill</sys:String>
+    <sys:String x:Key="LocalStorageSession">Local storage and sessions</sys:String>
+    <sys:String x:Key="ServiceWorkers">Service workers</sys:String>
+
+    <!-- Cleaner Items - Application -->
+    <sys:String x:Key="ApplicationCleaner">Application Cleaner</sys:String>
+    <sys:String x:Key="AppCachesLogsTemp">Application cache, logs, and temporary files</sys:String>
+    <sys:String x:Key="ApplicationCache">Application cache</sys:String>
+    <sys:String x:Key="ApplicationLogs">Application logs</sys:String>
+    <sys:String x:Key="ApplicationTempFiles">Application temporary files</sys:String>
+    <sys:String x:Key="OldPrefetchData">Old Prefetch data</sys:String>
+
+    <!-- Cleaner Items - Registry -->
+    <sys:String x:Key="InvalidEntriesMissingDLLs">Invalid entries and missing DLL references</sys:String>
+    <sys:String x:Key="InvalidFileAssociations">Invalid file associations</sys:String>
+    <sys:String x:Key="MissingDLLEntries">Missing DLL entries</sys:String>
+    <sys:String x:Key="EmptyRegistryKeys">Empty registry keys</sys:String>
+    <sys:String x:Key="OldUninstallerEntries">Old uninstaller entries</sys:String>
+    <sys:String x:Key="ApplicationPaths">Application paths</sys:String>
+    <sys:String x:Key="TypeLibraries">Type libraries</sys:String>
+    <sys:String x:Key="ObsoleteSoftware">Obsolete software</sys:String>
+
+    <!-- Cleaner Items - Privacy -->
+    <sys:String x:Key="RecentDocsClipboardSearch">Recent documents, clipboard, and search history</sys:String>
+    <sys:String x:Key="RecentDocuments">Recent documents</sys:String>
+    <sys:String x:Key="RunHistory">Run history</sys:String>
+    <sys:String x:Key="ClipboardData">Clipboard data</sys:String>
+    <sys:String x:Key="SearchHistory">Search history</sys:String>
+
+    <!-- Disk Analyzer -->
+    <sys:String x:Key="DiskAnalyzer">Disk Analyzer</sys:String>
+    <sys:String x:Key="SystemFiles">System files</sys:String>
+    <sys:String x:Key="BrowserData">Browser data</sys:String>
+    <sys:String x:Key="AppData">Application data</sys:String>
+    <sys:String x:Key="Registry">Registry</sys:String>
+    <sys:String x:Key="Privacy">Privacy</sys:String>
+    <sys:String x:Key="CleanupSummary">Cleanup Summary</sys:String>
+
+    <!-- Optimize Page - Additional Keys -->
+    <sys:String x:Key="CleaningStarted">Cleaning started...</sys:String>
+    <sys:String x:Key="CleaningSystemFiles">Cleaning system files...</sys:String>
+    <sys:String x:Key="CleaningBrowserData">Cleaning browser data...</sys:String>
+    <sys:String x:Key="CleaningApplicationData">Cleaning application data...</sys:String>
+    <sys:String x:Key="CleaningPrivacyData">Cleaning privacy data...</sys:String>
+    <sys:String x:Key="CalculatingSize">Calculating size...</sys:String>
+    <sys:String x:Key="AnalyzingDisk">Analyzing disk...</sys:String>
+    <sys:String x:Key="CleaningResults">Cleaning Results</sys:String>
+    <sys:String x:Key="SuccessfullyCleaned">Successfully cleaned</sys:String>
+    <sys:String x:Key="CouldNotClean">Could not clean</sys:String>
+    <sys:String x:Key="ItemsRemoved">Items removed</sys:String>
+    <sys:String x:Key="TotalSpaceFreed">Total space freed</sys:String>
+    <sys:String x:Key="CleaningFailedWithErrors">Cleaning completed with some errors</sys:String>
+    <sys:String x:Key="ConfirmCleanup">Confirm Cleanup</sys:String>
+    <sys:String x:Key="AreYouSureCleanup">Are you sure you want to clean the selected items?\nThis action cannot be undone!</sys:String>
+    <sys:String x:Key="ConfirmRegistryCleanup">Warning: Cleaning the registry may affect system stability.\nDo you want to create a backup before proceeding?\n\nDo you want to continue?</sys:String>
+    <sys:String x:Key="CreateBackup">Create Backup</sys:String>
+    <sys:String x:Key="ContinueWithoutBackup">Continue without backup</sys:String>
+    <sys:String x:Key="Analyzing">Analyzing...</sys:String>
+    <sys:String x:Key="AnalysisComplete">Analysis complete</sys:String>
+    <sys:String x:Key="FoundXItemsToClean">Found {0} items to clean</sys:String>
+    <sys:String x:Key="PotentialSpaceToFree">Potential space to free</sys:String>
+    <sys:String x:Key="StartAnalysis">Start Analysis</sys:String>
+    <sys:String x:Key="AnalysisFailed">Analysis failed</sys:String>
+    <sys:String x:Key="CouldNotAccessSomeFiles">Could not access some files. Try running as administrator.</sys:String>
+    <sys:String x:Key="LookingForInvalidEntries">Looking for invalid registry entries...</sys:String>
+    <sys:String x:Key="FoundInvalidEntries">Found {0} invalid entries</sys:String>
+    <sys:String x:Key="BackupCreatedAt">Backup created at</sys:String>
+    <sys:String x:Key="RegistryCleaningRequiresAdmin">Registry cleaning requires administrator privileges</sys:String>
+    <sys:String x:Key="StartupPrograms">Startup Programs</sys:String>
+    <sys:String x:Key="ManagingStartupPrograms">Managing startup programs...</sys:String>
+    <sys:String x:Key="Disable">Disable</sys:String>
+    <sys:String x:Key="Enable">Enable</sys:String>
+    <sys:String x:Key="Remove">Remove</sys:String>
+    <sys:String x:Key="HighImpact">High Impact</sys:String>
+    <sys:String x:Key="MediumImpact">Medium Impact</sys:String>
+    <sys:String x:Key="LowImpact">Low Impact</sys:String>
+    <sys:String x:Key="StartupManager">Startup Manager</sys:String>
+    <sys:String x:Key="SelectProgramsToDisable">Select programs to disable at startup</sys:String>
+    <sys:String x:Key="DisabledSuccessfully">Disabled successfully</sys:String>
+    <sys:String x:Key="LargeFiles">Large Files</sys:String>
+    <sys:String x:Key="DuplicateFiles">Duplicate Files</sys:String>
+    <sys:String x:Key="OldFiles">Old Files</sys:String>
+    <sys:String x:Key="TempFilesCategory">Temporary Files</sys:String>
+    <sys:String x:Key="LogFiles">Log Files</sys:String>
+    <sys:String x:Key="CacheFiles">Cache Files</sys:String>
+    <sys:String x:Key="StartCleanup">Start Cleanup</sys:String>
+    <sys:String x:Key="StopCleanup">Stop Cleanup</sys:String>
+    <sys:String x:Key="AnalyzeNow">Analyze Now</sys:String>
+    <sys:String x:Key="ViewDetails">View Details</sys:String>
+    <sys:String x:Key="ExportResults">Export Results</sys:String>
+    <sys:String x:Key="ScheduleCleanup">Schedule Cleanup</sys:String>
+    <sys:String x:Key="Ready">Ready</sys:String>
+    <sys:String x:Key="Busy">Busy</sys:String>
+    <sys:String x:Key="Completed">Completed</sys:String>
+    <sys:String x:Key="PleaseWait">Please wait...</sys:String>
+    <sys:String x:Key="OptimizingSystem">Optimizing system performance...</sys:String>
+    <sys:String x:Key="AccessDenied">Access denied</sys:String>
+    <sys:String x:Key="RunAsAdministratorRequired">This operation requires administrator rights</sys:String>
+    <sys:String x:Key="FileInUse">File is in use by another process</sys:String>
+    <sys:String x:Key="UnexpectedError">An unexpected error occurred</sys:String>
+
+    <!-- ==================== MESSAGE BOX & DIALOGS ==================== -->
+    <sys:String x:Key="Cancel">Cancel</sys:String>
+    <sys:String x:Key="Yes">Yes</sys:String>
+    <sys:String x:Key="No">No</sys:String>
+    <sys:String x:Key="Close">Close</sys:String>
+    <sys:String x:Key="Retry">Retry</sys:String>
+    <sys:String x:Key="Ignore">Ignore</sys:String>
+    <sys:String x:Key="NoSelectionTitle">No Selection</sys:String>
+    <sys:String x:Key="PleaseSelectPrograms">Please select at least one program to continue.</sys:String>
+    <sys:String x:Key="ExitInstallationTitle">Exit Installation</sys:String>
+    <sys:String x:Key="AreYouSureExit">Installation is in progress. Are you sure you want to exit?</sys:String>
+    <sys:String x:Key="StopInstallationTitle">Stop Installation</sys:String>
+    <sys:String x:Key="AreYouSureStop">Are you sure you want to stop the current installation process?</sys:String>
+    <sys:String x:Key="ConfirmCleanupTitle">Confirm Cleanup</sys:String>
+    <sys:String x:Key="ConfirmCleanupMessage">Are you sure you want to delete the selected items? This action cannot be undone.</sys:String>
+    <sys:String x:Key="RegistryWarningTitle">Registry Warning</sys:String>
+    <sys:String x:Key="RegistryWarningMessage">Cleaning the registry may affect system stability. Do you want to continue?</sys:String>
+    <sys:String x:Key="InstallationSuccessTitle">Installation Success</sys:String>
+    <sys:String x:Key="AllApplicationsInstalled">All selected programs have been installed successfully!</sys:String>
+    <sys:String x:Key="InstallationFailedTitle">Installation Failed</sys:String>
+    <sys:String x:Key="InstallationFailedMessage">An error occurred while installing some programs. Please check the logs.</sys:String>
+    <sys:String x:Key="CleanupSuccessTitle">Cleanup Complete</sys:String>
+    <sys:String x:Key="CleanupSuccessMessage">System cleaned and space freed successfully!</sys:String>
+    <sys:String x:Key="NotificationTitle">Dreams</sys:String>
+    <sys:String x:Key="NotificationRunning">Application is running in background</sys:String>
+    <sys:String x:Key="EnableTrayIcon">Enable System Tray Icon</sys:String>
+    <sys:String x:Key="TrayOpen">Open Dreams</sys:String>
+    <sys:String x:Key="TrayInstall">Install Programs</sys:String>
+    <sys:String x:Key="TrayOptimize">Optimize</sys:String>
+    <sys:String x:Key="TrayAbout">About</sys:String>
+    <sys:String x:Key="TraySettings">Settings</sys:String>
+    <sys:String x:Key="TrayExit">Exit</sys:String>
+
+    <!-- ==================== TWEAKS PAGE ==================== -->
+    <!-- Titles -->
+    <sys:String x:Key="TweaksTitle">Tweaks</sys:String>
+    <sys:String x:Key="WindowsActivation">Windows Activation</sys:String>
+    <sys:String x:Key="ProcessesServices">Processes &amp; Services</sys:String>
+    <sys:String x:Key="TweaksStats">Tweaks Stats</sys:String>
+    <sys:String x:Key="TweaksTab">Tweaks</sys:String>
+    <sys:String x:Key="GamingTab">Gaming Mode</sys:String>
+
+    <!-- Sections -->
+    <sys:String x:Key="ServicesSection">Service Settings</sys:String>
+    <sys:String x:Key="SystemImprovementsSection">System Improvements</sys:String>
+    <sys:String x:Key="UISection">User Interface</sys:String>
+    <sys:String x:Key="GamingImprovementsSection">Gaming Improvements</sys:String>
+
+    <!-- Tab Names -->
+    <sys:String x:Key="Tab_General">General</sys:String>
+    <sys:String x:Key="Tab_Gaming">Gaming</sys:String>
+    <sys:String x:Key="Tab_UI">UI</sys:String>
+    <sys:String x:Key="Tab_Services">Services</sys:String>
+    <sys:String x:Key="Tab_Privacy">Privacy</sys:String>
+    <sys:String x:Key="Tab_Network">Network</sys:String>
+
+    <!-- Risk Levels -->
+    <sys:String x:Key="Risk_Safe">Safe</sys:String>
+    <sys:String x:Key="Risk_Caution">Caution</sys:String>
+    <sys:String x:Key="Risk_Risky">Risky</sys:String>
+
+    <!-- Common -->
+    <sys:String x:Key="Activate">Activate</sys:String>
+    <sys:String x:Key="CurrentlyActive">Currently Active</sys:String>
+    <sys:String x:Key="EnabledOutOfTotal">Enabled / Total Tweaks</sys:String>
+    <sys:String x:Key="HoverDescriptionHint">👆 Hover over any item to see its description and details</sys:String>
+    <sys:String x:Key="NotActivated">Not Activated</sys:String>
+
+    <!-- ==================== TWEAKS - GENERAL TAB ==================== -->
+    <sys:String x:Key="Tweak_DebloatWindows_Name">Debloat Windows</sys:String>
+    <sys:String x:Key="Tweak_DebloatWindows_Desc">Remove built-in Windows apps and bloatware using Sparkle or Win11Debloat script.</sys:String>
+    <sys:String x:Key="Tweak_DisableTelemetry_Name">Disable Telemetry</sys:String>
+    <sys:String x:Key="Tweak_DisableTelemetry_Desc">Disables Windows telemetry and data collection for improved privacy and performance.</sys:String>
+    <sys:String x:Key="Tweak_DisableCopilot_Name">Disable Copilot</sys:String>
+    <sys:String x:Key="Tweak_DisableCopilot_Desc">Removes Microsoft's Copilot feature (will fail if Copilot is not installed).</sys:String>
+    <sys:String x:Key="Tweak_DetailedBSOD_Name">Detailed BSOD</sys:String>
+    <sys:String x:Key="Tweak_DetailedBSOD_Desc">Adds detailed information to the Blue Screen of Death screen.</sys:String>
+    <sys:String x:Key="Tweak_DisableKernelIsolation_Name">Disable Kernel Isolation</sys:String>
+    <sys:String x:Key="Tweak_DisableKernelIsolation_Desc">Disables Core Isolation Memory Integrity to improve system performance.</sys:String>
+    <sys:String x:Key="Tweak_UltimatePerformance_Name">Ultimate Performance Power Plan</sys:String>
+    <sys:String x:Key="Tweak_UltimatePerformance_Desc">Enables and applies the Windows Ultimate Performance power plan.</sys:String>
+    <sys:String x:Key="Tweak_DisableBackgroundMSStore_Name">Disable Background MS Store Apps</sys:String>
+    <sys:String x:Key="Tweak_DisableBackgroundMSStore_Desc">Disables Microsoft Store apps from running in the background.</sys:String>
+    <sys:String x:Key="Tweak_DisableDefenderRTP_Name">Disable Defender RTP</sys:String>
+    <sys:String x:Key="Tweak_DisableDefenderRTP_Desc">Disables Windows Defender Real-time Protection.</sys:String>
+    <sys:String x:Key="Tweak_DisableDynamicTicketing_Name">Disable Dynamic Ticketing</sys:String>
+    <sys:String x:Key="Tweak_DisableDynamicTicketing_Desc">Improves system responsiveness and reduces latency by disabling dynamic timer ticks.</sys:String>
+    <sys:String x:Key="Tweak_DisableFastStartup_Name">Disable Fast Startup</sys:String>
+    <sys:String x:Key="Tweak_DisableFastStartup_Desc">Disables Windows Fast Startup to improve system stability.</sys:String>
+    <sys:String x:Key="Tweak_DisableLocationTracking_Name">Disable Location Tracking</sys:String>
+    <sys:String x:Key="Tweak_DisableLocationTracking_Desc">Disables Windows location tracking for better privacy.</sys:String>
+    <sys:String x:Key="Tweak_DisableHibernation_Name">Disable Hibernation</sys:String>
+    <sys:String x:Key="Tweak_DisableHibernation_Desc">Disables hibernation to free up disk space and improve shutdown speed.</sys:String>
+    <sys:String x:Key="Tweak_DisableWindowsRecall_Name">Disable Windows Recall</sys:String>
+    <sys:String x:Key="Tweak_DisableWindowsRecall_Desc">Disables the Windows Recall feature for better privacy.</sys:String>
+    <sys:String x:Key="Tweak_DisableWiFiSense_Name">Disable WiFi Sense</sys:String>
+    <sys:String x:Key="Tweak_DisableWiFiSense_Desc">Prevents sharing of Wi-Fi networks with contacts.</sys:String>
+    <sys:String x:Key="Tweak_RemoveOneDrive_Name">Remove OneDrive</sys:String>
+    <sys:String x:Key="Tweak_RemoveOneDrive_Desc">Removes OneDrive completely from the system.</sys:String>
+    <sys:String x:Key="Tweak_RemoveBingIntegration_Name">Remove Bing Integration</sys:String>
+    <sys:String x:Key="Tweak_RemoveBingIntegration_Desc">Removes Bing apps and disables Bing web search in Windows Search.</sys:String>
+    <sys:String x:Key="Tweak_AlignTaskbarLeft_Name">Align Taskbar Left</sys:String>
+    <sys:String x:Key="Tweak_AlignTaskbarLeft_Desc">Aligns the taskbar to the left side of the screen.</sys:String>
+    <sys:String x:Key="Tweak_DisableHibFast_Name">Disable Hibernation &amp; Fast Startup</sys:String>
+    <sys:String x:Key="Tweak_DisableHibFast_Desc">Disables both Hibernation and Fast Startup technology for better stability.</sys:String>
+    <sys:String x:Key="Tweak_PauseWindowsUpdates_Name">Pause Windows Updates</sys:String>
+    <sys:String x:Key="Tweak_PauseWindowsUpdates_Desc">Pauses Windows Update to prevent unwanted updates.</sys:String>
+    <sys:String x:Key="Tweak_DisableReservedStorage_Name">Reserved Storage</sys:String>
+    <sys:String x:Key="Tweak_DisableReservedStorage_Desc">Disables Windows reserved storage to free up disk space.</sys:String>
+    <sys:String x:Key="Tweak_DisableAutorun_Name">Disable Autorun Removable Media</sys:String>
+    <sys:String x:Key="Tweak_DisableAutorun_Desc">Prevents Windows from automatically running programs on removable media.</sys:String>
+    <sys:String x:Key="Tweak_DisableDefrag_Name">Disable System Disk Defragmentation</sys:String>
+    <sys:String x:Key="Tweak_DisableDefrag_Desc">Disables automatic disk defragmentation (recommended for SSDs).</sys:String>
+    <sys:String x:Key="Tweak_DisableDHPT_Name">Disable Dynamic &amp; High Precision Timer</sys:String>
+    <sys:String x:Key="Tweak_DisableDHPT_Desc">Disables Dynamic and High Precision Event Timer for performance tuning.</sys:String>
+    <sys:String x:Key="Tweak_DisableInsiderTasks_Name">Disable Windows Insider Tasks</sys:String>
+    <sys:String x:Key="Tweak_DisableInsiderTasks_Desc">Disables Windows Insider background tasks.</sys:String>
+    <sys:String x:Key="Tweak_DisableMPO_Name">Disable Multiplane Overlay (MPO)</sys:String>
+    <sys:String x:Key="Tweak_DisableMPO_Desc">Disables MPO which can cause flickering or crashes in some GPU configurations.</sys:String>
+    <sys:String x:Key="Tweak_DisableStickyKeys_Name">Disable Sticky &amp; Filter Keys</sys:String>
+    <sys:String x:Key="Tweak_DisableStickyKeys_Desc">Disables Sticky Keys and Filter Keys accessibility shortcuts.</sys:String>
+    <sys:String x:Key="Tweak_DisableFSCache_Name">Disable File System Cache Resize</sys:String>
+    <sys:String x:Key="Tweak_DisableFSCache_Desc">Keeps file system cache at standard size for stability.</sys:String>
+    <sys:String x:Key="Tweak_DisableConsoleLockDisplay_Name">Disable Console Lock Display Off</sys:String>
+    <sys:String x:Key="Tweak_DisableConsoleLockDisplay_Desc">Prevents display from turning off when console is locked.</sys:String>
+    <sys:String x:Key="Tweak_DisableShutdownDialog_Name">Disable Shutdown Warning Dialog</sys:String>
+    <sys:String x:Key="Tweak_DisableShutdownDialog_Desc">Removes the shutdown warning dialog for a faster shutdown experience.</sys:String>
+    <sys:String x:Key="Tweak_DisableMemDiag_Name">Disable Automatic Memory Diagnostics</sys:String>
+    <sys:String x:Key="Tweak_DisableMemDiag_Desc">Disables Windows automatic memory diagnostic tool.</sys:String>
+    <sys:String x:Key="Tweak_DisableUAC_Name">Disable UAC</sys:String>
+    <sys:String x:Key="Tweak_DisableUAC_Desc">Disables User Account Control prompts. Use with caution.</sys:String>
+    <sys:String x:Key="Tweak_DisableSmartScreen_Name">Disable SmartScreen &amp; VBS</sys:String>
+    <sys:String x:Key="Tweak_DisableSmartScreen_Desc">Disables Windows Defender SmartScreen, Antimalware and VBS.</sys:String>
+
+    <!-- ==================== TWEAKS - GAMING TAB ==================== -->
+    <sys:String x:Key="Tweak_DisableGameBar_Name">Disable Game Bar</sys:String>
+    <sys:String x:Key="Tweak_DisableGameBar_Desc">Disables the Xbox Game Bar to free up system resources while gaming.</sys:String>
+    <sys:String x:Key="Tweak_DisableMouseAcceleration_Name">Disable Mouse Acceleration</sys:String>
+    <sys:String x:Key="Tweak_DisableMouseAcceleration_Desc">Disables mouse acceleration for consistent and precise movement. Great for gaming.</sys:String>
+    <sys:String x:Key="Tweak_EnableGameMode_Name">Enable Game Mode</sys:String>
+    <sys:String x:Key="Tweak_EnableGameMode_Desc">Enables Windows Game Mode for optimized gaming performance.</sys:String>
+    <sys:String x:Key="Tweak_EnableHAGS_Name">Enable HAGS</sys:String>
+    <sys:String x:Key="Tweak_EnableHAGS_Desc">Enables Hardware Accelerated GPU Scheduling for lower latency and better performance.</sys:String>
+    <sys:String x:Key="Tweak_OptimizeWindowedGames_Name">Optimize Windowed Games</sys:String>
+    <sys:String x:Key="Tweak_OptimizeWindowedGames_Desc">Enables optimization for windowed games to improve performance.</sys:String>
+    <sys:String x:Key="Tweak_DisableSlowStartup_Name">Disable Slowing Startup</sys:String>
+    <sys:String x:Key="Tweak_DisableSlowStartup_Desc">Disables features that slow down Windows and program startup times.</sys:String>
+    <sys:String x:Key="Tweak_UseDefaultPower_Name">Use Default Power Plan</sys:String>
+    <sys:String x:Key="Tweak_UseDefaultPower_Desc">Resets the power plan to Windows default (Balanced).</sys:String>
+    <sys:String x:Key="Tweak_DisablePointerPrecision_Name">Disable Enhance Pointer Precision</sys:String>
+    <sys:String x:Key="Tweak_DisablePointerPrecision_Desc">Disables enhanced pointer precision (mouse acceleration) at system level.</sys:String>
+
+    <!-- ==================== TWEAKS - UI TAB ==================== -->
+    <sys:String x:Key="Tweak_DisableLockScreenTips_Name">Disable Lock Screen Tips</sys:String>
+    <sys:String x:Key="Tweak_DisableLockScreenTips_Desc">Disables tips and suggestions on the lock screen.</sys:String>
+    <sys:String x:Key="Tweak_EnableDarkMode_Name">Enable Dark Mode</sys:String>
+    <sys:String x:Key="Tweak_EnableDarkMode_Desc">Enables dark mode system-wide.</sys:String>
+    <sys:String x:Key="Tweak_EnableEndTask_Name">Enable End Task on Right Click</sys:String>
+    <sys:String x:Key="Tweak_EnableEndTask_Desc">Enables the 'End Task' option in the taskbar context menu.</sys:String>
+    <sys:String x:Key="Tweak_HideTaskView_Name">Hide Task View &amp; Widgets</sys:String>
+    <sys:String x:Key="Tweak_HideTaskView_Desc">Hides the Task View and Widgets buttons on the taskbar.</sys:String>
+    <sys:String x:Key="Tweak_MenuShowDelayZero_Name">Menu Show Delay Zero</sys:String>
+    <sys:String x:Key="Tweak_MenuShowDelayZero_Desc">Removes the delay when opening context menus for a snappier experience.</sys:String>
+    <sys:String x:Key="Tweak_ShowSeconds_Name">Show Seconds in Clock</sys:String>
+    <sys:String x:Key="Tweak_ShowSeconds_Desc">Shows seconds next to the clock in the taskbar.</sys:String>
+    <sys:String x:Key="Tweak_SetPowerShell7_Name">Set PowerShell 7 as Default</sys:String>
+    <sys:String x:Key="Tweak_SetPowerShell7_Desc">Sets PowerShell 7 as the default profile in Windows Terminal.</sys:String>
+    <sys:String x:Key="Tweak_TaskbarTransparency_Name">Taskbar Transparency Effect</sys:String>
+    <sys:String x:Key="Tweak_TaskbarTransparency_Desc">Enables the transparency effect on the Windows taskbar.</sys:String>
+    <sys:String x:Key="Tweak_DarkThemeApps_Name">Dark Theme for Apps &amp; Explorer</sys:String>
+    <sys:String x:Key="Tweak_DarkThemeApps_Desc">Applies dark theme to all applications and File Explorer.</sys:String>
+    <sys:String x:Key="Tweak_DisableOverlayBadges_Name">Disable Overlay Badges on Icons</sys:String>
+    <sys:String x:Key="Tweak_DisableOverlayBadges_Desc">Removes overlay badges displayed on taskbar icons.</sys:String>
+    <sys:String x:Key="Tweak_StandardStartMenu_Name">Standard Start Menu Layout</sys:String>
+    <sys:String x:Key="Tweak_StandardStartMenu_Desc">Restores the standard layout of the Start menu.</sys:String>
+    <sys:String x:Key="Tweak_CompactExplorer_Name">Use Compact Explorer Mode</sys:String>
+    <sys:String x:Key="Tweak_CompactExplorer_Desc">Enables compact view in File Explorer for more items on screen.</sys:String>
+    <sys:String x:Key="Tweak_ShowSnapLayouts_Name">Show Window Snap Layouts</sys:String>
+    <sys:String x:Key="Tweak_ShowSnapLayouts_Desc">Shows snap layout options when hovering over the maximize button.</sys:String>
+    <sys:String x:Key="Tweak_RestoreFolderWindows_Name">Restore Previous Folder Windows</sys:String>
+    <sys:String x:Key="Tweak_RestoreFolderWindows_Desc">Restores previously open folder windows when logging back in.</sys:String>
+    <sys:String x:Key="Tweak_Remove3DObjects_Name">Remove 3D Objects from Explorer</sys:String>
+    <sys:String x:Key="Tweak_Remove3DObjects_Desc">Removes the '3D Objects' folder from This PC in File Explorer.</sys:String>
+    <sys:String x:Key="Tweak_DisableBingSearch_Name">Disable Bing in Start Menu Search</sys:String>
+    <sys:String x:Key="Tweak_DisableBingSearch_Desc">Disables Bing web search results in the Start menu search.</sys:String>
+    <sys:String x:Key="Tweak_StandardButtonsSize_Name">Standard System Buttons Size</sys:String>
+    <sys:String x:Key="Tweak_StandardButtonsSize_Desc">Keeps system buttons (minimize/maximize/close) at their standard size.</sys:String>
+    <sys:String x:Key="Tweak_StandardCursorFlicker_Name">Standard Cursor Flicker Frequency</sys:String>
+    <sys:String x:Key="Tweak_StandardCursorFlicker_Desc">Resets the cursor flicker frequency to the Windows standard.</sys:String>
+    <sys:String x:Key="Tweak_StandardScrollbarSize_Name">Standard Scrollbar Size</sys:String>
+    <sys:String x:Key="Tweak_StandardScrollbarSize_Desc">Keeps the scrollbar at standard size instead of auto-hiding.</sys:String>
+    <sys:String x:Key="Tweak_DarkTaskbar_Name">Dark Taskbar Theme</sys:String>
+    <sys:String x:Key="Tweak_DarkTaskbar_Desc">Applies a dark theme specifically to the Windows taskbar.</sys:String>
+    <sys:String x:Key="Tweak_DisableTaskbarDelay_Name">Disable Taskbar Preview Delay</sys:String>
+    <sys:String x:Key="Tweak_DisableTaskbarDelay_Desc">Removes the delay before taskbar thumbnails appear on hover.</sys:String>
+    <sys:String x:Key="Tweak_TaskbarAlignLeft_Name">Taskbar Alignment Left</sys:String>
+    <sys:String x:Key="Tweak_TaskbarAlignLeft_Desc">Moves taskbar icons alignment to the left side.</sys:String>
+    <sys:String x:Key="Tweak_DisableTipsSuggestions_Name">Disable Tips &amp; Suggestions</sys:String>
+    <sys:String x:Key="Tweak_DisableTipsSuggestions_Desc">Hides tips and suggestions shown by Windows.</sys:String>
+    <sys:String x:Key="Tweak_ShowPersonalizedAds_Name">Show Personalized Ads</sys:String>
+    <sys:String x:Key="Tweak_ShowPersonalizedAds_Desc">Controls personalized advertising based on your usage data.</sys:String>
+    <sys:String x:Key="Tweak_ShowFoldersThisPC_Name">Show Folders in This PC</sys:String>
+    <sys:String x:Key="Tweak_ShowFoldersThisPC_Desc">Shows user folders inside 'This PC' in File Explorer.</sys:String>
+    <sys:String x:Key="Tweak_EnableTooltips_Name">Enable Tooltips for Desktop</sys:String>
+    <sys:String x:Key="Tweak_EnableTooltips_Desc">Shows tooltips when hovering over desktop elements.</sys:String>
+    <sys:String x:Key="Tweak_DisableAutoBrightness_Name">Disable Brightness Auto-Change</sys:String>
+    <sys:String x:Key="Tweak_DisableAutoBrightness_Desc">Prevents Windows from spontaneously changing display brightness.</sys:String>
+    <sys:String x:Key="Tweak_StrippedContextMenu_Name">Stripped-down Context Menu</sys:String>
+    <sys:String x:Key="Tweak_StrippedContextMenu_Desc">Enables the simplified right-click context menu in Windows 11.</sys:String>
+    <sys:String x:Key="Tweak_DisableCopilotUI_Name">Disable Copilot &amp; Recall UI</sys:String>
+    <sys:String x:Key="Tweak_DisableCopilotUI_Desc">Hides Copilot and Recall assistant buttons from the UI.</sys:String>
+    <sys:String x:Key="Tweak_ShowTaskbarIcons_Name">Show Icons on Taskbar</sys:String>
+    <sys:String x:Key="Tweak_ShowTaskbarIcons_Desc">Controls which icons and buttons are visible on the taskbar.</sys:String>
+    <sys:String x:Key="Tweak_DisableTipsNotif_Name">Disable Windows Tips Notifications</sys:String>
+    <sys:String x:Key="Tweak_DisableTipsNotif_Desc">Prevents Windows from showing tips and suggestion notifications.</sys:String>
+    <sys:String x:Key="Tweak_WallpaperJPEGCompression_Name">JPEG Wallpaper Compression</sys:String>
+    <sys:String x:Key="Tweak_WallpaperJPEGCompression_Desc">Controls compression of desktop wallpaper in JPEG format.</sys:String>
+    <sys:String x:Key="Tweak_OpenQuickAccess_Name">Open Quick Access Instead of This PC</sys:String>
+    <sys:String x:Key="Tweak_OpenQuickAccess_Desc">Sets File Explorer to open Quick Access instead of This PC.</sys:String>
+
+    <!-- ==================== TWEAKS - SERVICES TAB ==================== -->
+    <sys:String x:Key="Tweak_SvcWindowsSearch_Name">Services: Windows Search</sys:String>
+    <sys:String x:Key="Tweak_SvcWindowsSearch_Desc">Controls services related to Windows Search indexing.</sys:String>
+    <sys:String x:Key="Tweak_SvcWindowsStore_Name">Services: Windows Store</sys:String>
+    <sys:String x:Key="Tweak_SvcWindowsStore_Desc">Controls services related to the Microsoft Store.</sys:String>
+    <sys:String x:Key="Tweak_SvcBluetooth_Name">Services: Bluetooth</sys:String>
+    <sys:String x:Key="Tweak_SvcBluetooth_Desc">Controls services related to Bluetooth functionality.</sys:String>
+    <sys:String x:Key="Tweak_SvcFax_Name">Services: Fax</sys:String>
+    <sys:String x:Key="Tweak_SvcFax_Desc">Controls services related to fax functionality.</sys:String>
+    <sys:String x:Key="Tweak_SvcSystemComponents_Name">Services: System Components</sys:String>
+    <sys:String x:Key="Tweak_SvcSystemComponents_Desc">Controls services related to system components.</sys:String>
+    <sys:String x:Key="Tweak_SvcVPN_Name">Services: VPN Clients</sys:String>
+    <sys:String x:Key="Tweak_SvcVPN_Desc">Controls services related to VPN client connections.</sys:String>
+    <sys:String x:Key="Tweak_SvcEventLogs_Name">Services: Error &amp; Event Logs</sys:String>
+    <sys:String x:Key="Tweak_SvcEventLogs_Desc">Controls services that collect errors and event logs.</sys:String>
+    <sys:String x:Key="Tweak_SvcKiosk_Name">Services: Windows Kiosk</sys:String>
+    <sys:String x:Key="Tweak_SvcKiosk_Desc">Controls services related to Windows Kiosk mode.</sys:String>
+    <sys:String x:Key="Tweak_SvcBgSecurity_Name">Services: Background Security</sys:String>
+    <sys:String x:Key="Tweak_SvcBgSecurity_Desc">Controls services related to background security checks.</sys:String>
+    <sys:String x:Key="Tweak_SvcHyperV_Name">Services: Hyper-V</sys:String>
+    <sys:String x:Key="Tweak_SvcHyperV_Desc">Controls services related to Hyper-V virtualization.</sys:String>
+    <sys:String x:Key="Tweak_SvcXbox_Name">Services: Xbox</sys:String>
+    <sys:String x:Key="Tweak_SvcXbox_Desc">Controls services related to Xbox integration.</sys:String>
+    <sys:String x:Key="Tweak_SvcPerfCounters_Name">Services: Performance Counters</sys:String>
+    <sys:String x:Key="Tweak_SvcPerfCounters_Desc">Controls performance counter services.</sys:String>
+    <sys:String x:Key="Tweak_SvcPrinter_Name">Services: Printer</sys:String>
+    <sys:String x:Key="Tweak_SvcPrinter_Desc">Controls services related to printing functionality.</sys:String>
+    <sys:String x:Key="Tweak_SvcTabletMode_Name">Services: Tablet/Smartphone Mode</sys:String>
+    <sys:String x:Key="Tweak_SvcTabletMode_Desc">Controls services for tablet and smartphone mode support.</sys:String>
+    <sys:String x:Key="Tweak_SvcLocalNetwork_Name">Services: Local Network</sys:String>
+    <sys:String x:Key="Tweak_SvcLocalNetwork_Desc">Controls services related to local network operation.</sys:String>
+    <sys:String x:Key="Tweak_SvcWindowsMedia_Name">Services: Windows Media</sys:String>
+    <sys:String x:Key="Tweak_SvcWindowsMedia_Desc">Controls services related to Windows Media playback.</sys:String>
+    <sys:String x:Key="Tweak_SvcWebDAV_Name">Services: WebDAV</sys:String>
+    <sys:String x:Key="Tweak_SvcWebDAV_Desc">Controls WebDAV remote file management service.</sys:String>
+    <sys:String x:Key="Tweak_SvcFileEncryption_Name">Services: File Encryption</sys:String>
+    <sys:String x:Key="Tweak_SvcFileEncryption_Desc">Controls services related to file encryption.</sys:String>
+    <sys:String x:Key="Tweak_SvcBgDiagnostics_Name">Services: Background Diagnostics</sys:String>
+    <sys:String x:Key="Tweak_SvcBgDiagnostics_Desc">Controls services related to background system diagnostics.</sys:String>
+    <sys:String x:Key="Tweak_SvcPushNotifications_Name">Services: Push Notifications</sys:String>
+    <sys:String x:Key="Tweak_SvcPushNotifications_Desc">Controls services related to push notifications.</sys:String>
+    <sys:String x:Key="Tweak_SvcWindowsUpdate_Name">Services: Windows Update</sys:String>
+    <sys:String x:Key="Tweak_SvcWindowsUpdate_Desc">Controls services related to Windows Update.</sys:String>
+    <sys:String x:Key="Tweak_SvcBiometric_Name">Services: Windows Biometric</sys:String>
+    <sys:String x:Key="Tweak_SvcBiometric_Desc">Controls Windows Biometric Service (fingerprint/face recognition).</sys:String>
+    <sys:String x:Key="Tweak_SvcScanner_Name">Services: Scanner Operation</sys:String>
+    <sys:String x:Key="Tweak_SvcScanner_Desc">Controls services related to scanner operation.</sys:String>
+    <sys:String x:Key="Tweak_SvcAdditionalMonitors_Name">Services: Additional Monitors</sys:String>
+    <sys:String x:Key="Tweak_SvcAdditionalMonitors_Desc">Controls services related to additional monitor support.</sys:String>
+    <sys:String x:Key="Tweak_SvcUSBModems_Name">Services: USB Modems &amp; Routers</sys:String>
+    <sys:String x:Key="Tweak_SvcUSBModems_Desc">Controls services related to USB modems and routers.</sys:String>
+    <sys:String x:Key="Tweak_SvcRemoteDesktop_Name">Services: Remote Desktop</sys:String>
+    <sys:String x:Key="Tweak_SvcRemoteDesktop_Desc">Controls services related to Remote Desktop.</sys:String>
+    <sys:String x:Key="Tweak_SvcSmartCard_Name">Services: Smart Card</sys:String>
+    <sys:String x:Key="Tweak_SvcSmartCard_Desc">Controls services related to Smart Card operation.</sys:String>
+    <sys:String x:Key="Tweak_SvcLocalization_Name">Services: Windows Localization</sys:String>
+    <sys:String x:Key="Tweak_SvcLocalization_Desc">Controls services related to Windows localization.</sys:String>
+    <sys:String x:Key="Tweak_SvcCorporateTools_Name">Services: Corporate Tools</sys:String>
+    <sys:String x:Key="Tweak_SvcCorporateTools_Desc">Controls services related to corporate/enterprise tools.</sys:String>
+    <sys:String x:Key="Tweak_SvcStoreDemoMode_Name">Services: Store Demo Mode</sys:String>
+    <sys:String x:Key="Tweak_SvcStoreDemoMode_Desc">Controls services related to Store Demo Mode.</sys:String>
+    <sys:String x:Key="Tweak_SvcMMScheduler_Name">Services: Multimedia Scheduler</sys:String>
+    <sys:String x:Key="Tweak_SvcMMScheduler_Desc">Controls the Multimedia Class Scheduler Service.</sys:String>
+
+    <!-- ==================== TWEAKS - PRIVACY TAB ==================== -->
+    <sys:String x:Key="Tweak_DisableAdvertisingId_Name">Advertising Identifier</sys:String>
+    <sys:String x:Key="Tweak_DisableAdvertisingId_Desc">Disables advertising identifier used for targeted advertising.</sys:String>
+    <sys:String x:Key="Tweak_DisableWinTelemetry_Name">Windows Telemetry Monitoring</sys:String>
+    <sys:String x:Key="Tweak_DisableWinTelemetry_Desc">Disables collection and monitoring of Windows telemetry data.</sys:String>
+    <sys:String x:Key="Tweak_DisableAppInstallData_Name">App Installation Data</sys:String>
+    <sys:String x:Key="Tweak_DisableAppInstallData_Desc">Stops collecting data about installed applications.</sys:String>
+    <sys:String x:Key="Tweak_DisableHandwritingData_Name">Handwriting Data Collection</sys:String>
+    <sys:String x:Key="Tweak_DisableHandwritingData_Desc">Stops collecting and sending handwriting data to Microsoft.</sys:String>
+    <sys:String x:Key="Tweak_BlockMSDomains_Name">Network Access to MS Spy Domains</sys:String>
+    <sys:String x:Key="Tweak_BlockMSDomains_Desc">Blocks network access to Microsoft telemetry/spy domains.</sys:String>
+    <sys:String x:Key="Tweak_DisableFeedbackRequests_Name">Feedback Requests</sys:String>
+    <sys:String x:Key="Tweak_DisableFeedbackRequests_Desc">Disables checking requests through Windows Feedback.</sys:String>
+    <sys:String x:Key="Tweak_DisableHiddenMonitoring_Name">Hidden System Monitoring</sys:String>
+    <sys:String x:Key="Tweak_DisableHiddenMonitoring_Desc">Disables hidden background monitoring of your system.</sys:String>
+    <sys:String x:Key="Tweak_DisableCovertCollection_Name">Covert Data Collection Services</sys:String>
+    <sys:String x:Key="Tweak_DisableCovertCollection_Desc">Disables services for covert data collection and transmission.</sys:String>
+    <sys:String x:Key="Tweak_DisableNVIDIATelemetry_Name">NVIDIA Telemetry</sys:String>
+    <sys:String x:Key="Tweak_DisableNVIDIATelemetry_Desc">Disables collection and monitoring of NVIDIA telemetry.</sys:String>
+    <sys:String x:Key="Tweak_DisableOfflineMapsUpdate_Name">Offline Maps Auto-Update</sys:String>
+    <sys:String x:Key="Tweak_DisableOfflineMapsUpdate_Desc">Stops collecting data and background updates of Offline maps.</sys:String>
+    <sys:String x:Key="Tweak_DisableDataSyncing_Name">Data Syncing</sys:String>
+    <sys:String x:Key="Tweak_DisableDataSyncing_Desc">Disables all types of syncing your data with Microsoft servers.</sys:String>
+    <sys:String x:Key="Tweak_DisableSchedulerData_Name">Scheduler Events Data Collection</sys:String>
+    <sys:String x:Key="Tweak_DisableSchedulerData_Desc">Disables collecting data through Windows scheduler events.</sys:String>
+    <sys:String x:Key="Tweak_DisableAppUsageStats_Name">Application Usage Statistics</sys:String>
+    <sys:String x:Key="Tweak_DisableAppUsageStats_Desc">Stops collecting application usage statistics.</sys:String>
+    <sys:String x:Key="Tweak_DisableHWConfigData_Name">Hardware Configuration Data</sys:String>
+    <sys:String x:Key="Tweak_DisableHWConfigData_Desc">Stops collecting hardware configuration data.</sys:String>
+    <sys:String x:Key="Tweak_DisableUserLocation_Name">User Location Tracking</sys:String>
+    <sys:String x:Key="Tweak_DisableUserLocation_Desc">Disables determining and tracking the user's location.</sys:String>
+    <sys:String x:Key="Tweak_DisableSpeechUpdates_Name">Speech Synthesis Updates</sys:String>
+    <sys:String x:Key="Tweak_DisableSpeechUpdates_Desc">Stops hidden background updates of speech synthesis data.</sys:String>
+    <sys:String x:Key="Tweak_DisableHiddenExperiments_Name">Hidden System Experiments</sys:String>
+    <sys:String x:Key="Tweak_DisableHiddenExperiments_Desc">Disables hidden experiments running on your system.</sys:String>
+    <sys:String x:Key="Tweak_DisableEventsLogging_Name">Windows Events Logging</sys:String>
+    <sys:String x:Key="Tweak_DisableEventsLogging_Desc">Disables Windows Events logging.</sys:String>
+    <sys:String x:Key="Tweak_DisableBehaviorRecording_Name">User Behavior Recording</sys:String>
+    <sys:String x:Key="Tweak_DisableBehaviorRecording_Desc">Stops keeping a record of user behavior.</sys:String>
+    <sys:String x:Key="Tweak_DisableIntelTelemetry_Name">Intel Telemetry</sys:String>
+    <sys:String x:Key="Tweak_DisableIntelTelemetry_Desc">Disables collection and monitoring of Intel telemetry.</sys:String>
+
+    <!-- ==================== TWEAKS - NETWORK TAB ==================== -->
+    <sys:String x:Key="Tweak_OptimizeNetwork_Name">Optimize Network Settings</sys:String>
+    <sys:String x:Key="Tweak_OptimizeNetwork_Desc">Changes various Windows settings to improve network latency and speeds.</sys:String>
+    <sys:String x:Key="Tweak_SetServicesManual_Name">Set Services to Manual</sys:String>
+    <sys:String x:Key="Tweak_SetServicesManual_Desc">Sets various Windows services to manual startup type to improve performance.</sys:String>
+    <sys:String x:Key="Tweak_PrioritySeparation_Name">Set Win32 Priority Separation</sys:String>
+    <sys:String x:Key="Tweak_PrioritySeparation_Desc">Optimizes foreground app performance by modifying system process priority.</sys:String>
+    <sys:String x:Key="Tweak_DisableWPBT_Name">Disable Windows Platform Binary Table</sys:String>
+    <sys:String x:Key="Tweak_DisableWPBT_Desc">Prevents your computer vendor from using WPBT.</sys:String>
+    <sys:String x:Key="Tweak_DisableTeredoIPv6_Name">Disable Teredo &amp; IPv6</sys:String>
+    <sys:String x:Key="Tweak_DisableTeredoIPv6_Desc">Disables Teredo, ISATAP and IPv6 protocols to reduce network overhead.</sys:String>
+    <sys:String x:Key="Tweak_DisableFirewall_Name">Disable Windows Defender Firewall</sys:String>
+    <sys:String x:Key="Tweak_DisableFirewall_Desc">Disables Windows Defender Firewall. Use with caution.</sys:String>
+
+    <!-- ==================== TWEAKS PAGE - ADDITIONAL KEYS ==================== -->
+
+    <!-- Admin & Permissions -->
+    <sys:String x:Key="AdminRequired">Administrator Privileges Required</sys:String>
+    <sys:String x:Key="AdminRequiredMsg">This application requires Administrator privileges to apply certain system modifications.</sys:String>
+    <sys:String x:Key="AdminElevated">Running with Administrator privileges</sys:String>
+    <sys:String x:Key="AdminStandard">Running with standard privileges - some features may be limited</sys:String>
+
+    <!-- Warnings & Errors -->
+    <sys:String x:Key="DangerousTweak">This modification may affect system stability or security. Are you sure you want to continue?</sys:String>
+    <sys:String x:Key="ApplyFailed">Failed to apply the requested modification.</sys:String>
+    <sys:String x:Key="RevertFailed">Failed to revert the modification.</sys:String>
+    <sys:String x:Key="NoDefinitionMsg">No configuration found for this modification</sys:String>
+
+    <!-- Restart Notifications -->
+    <sys:String x:Key="RestartTitle">Restart Required</sys:String>
+    <sys:String x:Key="RestartMsg">This modification requires a system restart to take full effect. Would you like to restart now?</sys:String>
+    <sys:String x:Key="ExplorerRestartNeeded">Explorer restart required for changes to take effect. Restart now?</sys:String>
+    <sys:String x:Key="SystemRestartNeeded">A system restart is required. Save your work and restart now?</sys:String>
+
+    <!-- Loading & Status -->
+    <sys:String x:Key="Loading">Loading...</sys:String>
+    <sys:String x:Key="StatusIdle">Ready</sys:String>
+    <sys:String x:Key="StatusProcessing">Processing...</sys:String>
+    <sys:String x:Key="StatusSuccess">Completed successfully</sys:String>
+    <sys:String x:Key="StatusFailed">Operation failed</sys:String>
+
+    <!-- Windows Activation -->
+    <sys:String x:Key="NotActivatedMsg">Windows is not currently activated.</sys:String>
+    <sys:String x:Key="Permanent">Permanent activation</sys:String>
+    <sys:String x:Key="DaysRemaining">{0} days remaining</sys:String>
+    <sys:String x:Key="ExpiresOn">Expires on: {0}</sys:String>
+    <sys:String x:Key="ActivationTitle">Activate Windows</sys:String>
+    <sys:String x:Key="ActivationMessage">Opening activation utility...</sys:String>
+
+    <!-- Process/Service Display -->
+    <sys:String x:Key="ActiveProcesses">{0} active processes</sys:String>
+    <sys:String x:Key="ActiveServices">{0} active services</sys:String>
+    <sys:String x:Key="ProcServLabel">System Activity</sys:String>
+
+    <!-- Tweaks Stats -->
+    <sys:String x:Key="TweaksCount">{0} of {1} tweaks enabled</sys:String>
+    <sys:String x:Key="NoTweaksApplied">No modifications applied yet</sys:String>
+
+
+    <!-- Buttons -->
+    <sys:String x:Key="BtnApply">Apply</sys:String>
+    <sys:String x:Key="BtnRevert">Revert</sys:String>
+    <sys:String x:Key="BtnRefresh">Refresh</sys:String>
+    <sys:String x:Key="BtnExport">Export Backup</sys:String>
+    <sys:String x:Key="BtnImport">Import Backup</sys:String>
+
+    <!-- Confirm Dialogs -->
+    <sys:String x:Key="ConfirmTitle">Confirm Action</sys:String>
+    <sys:String x:Key="ConfirmMsg">Are you sure you want to proceed with this action?</sys:String>
+
+    <!-- Backup Operations -->
+    <sys:String x:Key="BackupExported">Backup exported successfully to: {0}</sys:String>
+    <sys:String x:Key="BackupImported">Backup imported successfully</sys:String>
+    <sys:String x:Key="BackupFailed">Failed to process backup file</sys:String>
+
+    <!-- Tweak Operations -->
+    <sys:String x:Key="TweakApplied">Modification applied: {0}</sys:String>
+    <sys:String x:Key="TweakReverted">Modification reverted: {0}</sys:String>
+    <sys:String x:Key="RateLimitMsg">Please wait before applying another modification</sys:String>
+
+    <!-- System Info -->
+    <sys:String x:Key="WinVersion">Windows Version: {0}</sys:String>
+    <sys:String x:Key="BuildNumber">Build: {0}</sys:String>
+    <sys:String x:Key="SystemUptime">System Uptime: {0}</sys:String>
+
+    <!-- Search & Filter -->
+    <sys:String x:Key="SearchPlaceholder">Search tweaks...</sys:String>
+    <sys:String x:Key="NoResultsFound">No tweaks match your search</sys:String>
+    <sys:String x:Key="CategoryAll">All Tweaks</sys:String>
+    <sys:String x:Key="CategoryApplied">Applied Only</sys:String>
+    <sys:String x:Key="CategoryAvailable">Available Only</sys:String>
+
+    <!-- Tooltips -->
+    <sys:String x:Key="InfoTooltip">Click for more information about this modification</sys:String>
+    <sys:String x:Key="DangerTooltip">This modification may affect system security or stability</sys:String>
+    <sys:String x:Key="RestartTooltip">Requires restart to take effect</sys:String>
+    <sys:String x:Key="ExplorerTooltip">Requires Explorer restart to take effect</sys:String>
+
+    <!-- ==================== PAGE MESSAGES - DYNAMIC RANDOM MESSAGES FOR HEADER ==================== -->
+    <!-- 🏠 Home Page Messages -->
+    <sys:String x:Key="MsgHome_01">Your Power. Your Machine.</sys:String>
+    <sys:String x:Key="MsgHome_02">Raw Hardware. Unleashed.</sys:String>
+    <sys:String x:Key="MsgHome_03">Know What's Under The Hood.</sys:String>
+    <sys:String x:Key="MsgHome_04">Scanning Your Digital Arsenal...</sys:String>
+    <sys:String x:Key="MsgHome_05">This Is Your Weapon. Master It.</sys:String>
+    <sys:String x:Key="MsgHome_06">Every Core. Every Byte. Revealed.</sys:String>
+    <sys:String x:Key="MsgHome_07">Own Your Battle Station.</sys:String>
+    <sys:String x:Key="MsgHome_08">Maximum Power. Zero Secrets.</sys:String>
+
+    <!-- 📦 Install Page Messages -->
+    <sys:String x:Key="MsgInstall_01">Silent Installer Ready</sys:String>
+    <sys:String x:Key="MsgInstall_02">One-click installation mode</sys:String>
+    <sys:String x:Key="MsgInstall_03">Save time, install smarter</sys:String>
+    <sys:String x:Key="MsgInstall_04">Queue your apps &amp; relax</sys:String>
+    <sys:String x:Key="MsgInstall_05">Your software, your way</sys:String>
+    <sys:String x:Key="MsgInstall_06">No clicks, no fuss, just install</sys:String>
+    <sys:String x:Key="MsgInstall_07">Batch install activated</sys:String>
+    <sys:String x:Key="MsgInstall_08">Installing made effortless</sys:String>
+
+    <!-- 📦 Online Page Messages -->
+    <sys:String x:Key="MsgStore_01">Winget Package Manager Ready</sys:String>
+    <sys:String x:Key="MsgStore_02">One-command installation mode</sys:String>
+    <sys:String x:Key="MsgStore_03">Save time, install from Microsoft Store &amp; GitHub</sys:String>
+    <sys:String x:Key="MsgStore_04">Queue your apps &amp; let winget do the work</sys:String>
+    <sys:String x:Key="MsgStore_05">Your software, automated via winget</sys:String>
+    <sys:String x:Key="MsgStore_06">Silent install, no interruptions</sys:String>
+    <sys:String x:Key="MsgStore_07">Batch install with winget activated</sys:String>
+    <sys:String x:Key="MsgStore_08">Winget makes installation effortless</sys:String>
+
+    <!-- 🧹 Optimize Page Messages -->
+    <sys:String x:Key="MsgOptimize_01">Cleaner &amp; Optimizer Active</sys:String>
+    <sys:String x:Key="MsgOptimize_02">Boosting system performance...</sys:String>
+    <sys:String x:Key="MsgOptimize_03">Removing unnecessary files</sys:String>
+    <sys:String x:Key="MsgOptimize_04">Fine-tuning your Windows</sys:String>
+    <sys:String x:Key="MsgOptimize_05">Speed mode: ENGAGED</sys:String>
+    <sys:String x:Key="MsgOptimize_06">Optimizing power settings</sys:String>
+    <sys:String x:Key="MsgOptimize_07">Smart cleanup in progress</sys:String>
+    <sys:String x:Key="MsgOptimize_08">Your PC, but faster</sys:String>
+
+    <!-- 🔧 Tweaks Page Messages -->
+    <sys:String x:Key="MsgTweaks_01">Tweak Panel Loaded</sys:String>
+    <sys:String x:Key="MsgTweaks_02">Customize your experience</sys:String>
+    <sys:String x:Key="MsgTweaks_03">Personalize Windows your way</sys:String>
+    <sys:String x:Key="MsgTweaks_04">Unlock hidden features</sys:String>
+    <sys:String x:Key="MsgTweaks_05">Advanced modifications ready</sys:String>
+    <sys:String x:Key="MsgTweaks_06">Privacy &amp; performance tweaks</sys:String>
+    <sys:String x:Key="MsgTweaks_07">Make Windows truly yours</sys:String>
+    <sys:String x:Key="MsgTweaks_08">Pro-level customization</sys:String>
+    
+    <!-- 🔧 DNS Page Messages -->
+    <sys:String x:Key="MsgDNS_01">DNS Optimizer Ready</sys:String>
+    <sys:String x:Key="MsgDNS_02">Test DNS servers for best performance</sys:String>
+    <sys:String x:Key="MsgDNS_03">Switch DNS providers instantly</sys:String>
+    <sys:String x:Key="MsgDNS_04">Find the fastest DNS for you</sys:String>
+    <sys:String x:Key="MsgDNS_05">Privacy &amp; security focused</sys:String>
+    <sys:String x:Key="MsgDNS_06">Block ads at DNS level</sys:String>
+    <sys:String x:Key="MsgDNS_07">Optimize your internet speed</sys:String>
+    <sys:String x:Key="MsgDNS_08">One-click DNS optimization</sys:String>
+
+    <!-- ==================== DNS OPTIMIZER PAGE - NEW KEYS ==================== -->
+
+    <!-- Page Titles & Headers -->
+    <sys:String x:Key="DNSOptimizer">DNS Optimizer</sys:String>
+    <sys:String x:Key="DNSOptimizerDesc">Optimize your internet connection by choosing the fastest DNS servers</sys:String>
+
+    <!-- Header Buttons -->
+    <sys:String x:Key="FlushDNS">Flush DNS</sys:String>
+    <sys:String x:Key="NetworkReset">Network Reset</sys:String>
+    <sys:String x:Key="TestAllServers">Test All Servers</sys:String>
+
+    <!-- Current DNS Card -->
+    <sys:String x:Key="ConnectedToInternet">Connected to Internet</sys:String>
+    <sys:String x:Key="CurrentDNS">Current DNS:</sys:String>
+    <sys:String x:Key="LatencyLabel">LATENCY</sys:String>
+    <sys:String x:Key="AdBlockingLabel">AD-BLOCKING</sys:String>
+
+    <!-- Filter Tabs -->
+    <sys:String x:Key="AllServers">All Servers</sys:String>
+    <sys:String x:Key="RecommendedFilter">Recommended</sys:String>
+    <sys:String x:Key="FastLowPing">Fast (Low Ping)</sys:String>
+    <sys:String x:Key="SecurityFilter">Security</sys:String>
+    <sys:String x:Key="PrivacyFilter">Privacy</sys:String>
+
+    <!-- DNS Provider Names & Descriptions -->
+    <sys:String x:Key="GooglePublicDNS">Google DNS</sys:String>
+    <sys:String x:Key="GoogleDescShort">Reliable &amp; Widely Supported</sys:String>
+    <sys:String x:Key="GoogleDescFull">Leverages Google's massive global infrastructure for maximum uptime and consistent performance.</sys:String>
+
+    <sys:String x:Key="Cloudflare">Cloudflare</sys:String>
+    <sys:String x:Key="CloudflareDescShort">Fast &amp; Privacy-Focused</sys:String>
+    <sys:String x:Key="CloudflareDescFull">Blazing fast DNS with a strict no-log policy for ultimate user privacy.</sys:String>
+
+    <sys:String x:Key="OpenDNS">OpenDNS</sys:String>
+    <sys:String x:Key="OpenDNSDescShort">Content Filtering</sys:String>
+    <sys:String x:Key="OpenDNSDescFull">Enterprise-grade security with smart content filtering to protect your family.</sys:String>
+
+    <sys:String x:Key="Quad9">Quad9</sys:String>
+    <sys:String x:Key="Quad9DescShort">Threat Protection</sys:String>
+    <sys:String x:Key="Quad9DescFull">Security-focused DNS with threat intelligence blocking against malware.</sys:String>
+
+    <sys:String x:Key="AdGuardDNS">AdGuard DNS</sys:String>
+    <sys:String x:Key="AdGuardDescShort">Ad &amp; Tracker Blocker</sys:String>
+    <sys:String x:Key="AdGuardDescFull">Eliminate intrusive ads and online tracking at the network level.</sys:String>
+
+    <sys:String x:Key="AutomaticDHCP">Automatic (DHCP)</sys:String>
+    <sys:String x:Key="DHCPDescShort">ISP Default</sys:String>
+    <sys:String x:Key="DHCPDescFull">Use your ISP's default DNS servers automatically. No manual configuration needed.</sys:String>
+
+    <!-- Tags -->
+    <sys:String x:Key="Reliable">Reliable</sys:String>
+    <sys:String x:Key="WidelySupported">Widely Supported</sys:String>
+    <sys:String x:Key="Fast">Fast</sys:String>
+    <sys:String x:Key="Security">Security</sys:String>
+    <sys:String x:Key="ContentFiltering">Filtering</sys:String>
+    <sys:String x:Key="ThreatBlocking">Threat Blocking</sys:String>
+    <sys:String x:Key="AdBlock">Ad-Block</sys:String>
+    <sys:String x:Key="MalwareBlock">Malware Block</sys:String>
+    <sys:String x:Key="Default">Default</sys:String>
+    <sys:String x:Key="ISPProvided">ISP Provided</sys:String>
+
+    <!-- Custom DNS -->
+    <sys:String x:Key="CustomDNS">Custom DNS</sys:String>
+    <sys:String x:Key="CustomDNSDesc">Manually configure your own DNS servers</sys:String>
+    <sys:String x:Key="CustomDNSFeature">Custom DNS feature will be available soon!</sys:String>
+
+    <!-- Search -->
+    <sys:String x:Key="SearchDNS">Search DNS...</sys:String>
+
+    <!-- Status Messages -->
+    <sys:String x:Key="Testing">Testing...</sys:String>
+    <sys:String x:Key="TestComplete">All DNS servers tested successfully!</sys:String>
+    <sys:String x:Key="Timeout">Timeout</sys:String>
+
+    <!-- Footer -->
+    <sys:String x:Key="SelectedNone">Selected: None</sys:String>
+    <sys:String x:Key="Primary">Primary</sys:String>
+    <sys:String x:Key="Secondary">Secondary</sys:String>
+    <sys:String x:Key="SelectedDHCP">Selected: Automatic (DHCP) - Use ISP default DNS</sys:String>
+    <sys:String x:Key="ApplyDNSChanges">Apply DNS Changes</sys:String>
+    <sys:String x:Key="NoSelection">Please select a DNS provider first.</sys:String>
+
+    <!-- Dialog Messages -->
+    <sys:String x:Key="Warning">Warning</sys:String>
+    <sys:String x:Key="Confirm">Confirm</sys:String>
+    <sys:String x:Key="ConfirmDHCP">Reset DNS to automatic (DHCP)?</sys:String>
+    <sys:String x:Key="ChangeDNSTo">Change DNS servers to</sys:String>
+    <sys:String x:Key="DNSChangeWarning">This will change DNS settings for all active network adapters</sys:String>
+    <sys:String x:Key="ConfirmDNSChange">Confirm DNS Change</sys:String>
+    <sys:String x:Key="DHCPAuto">DHCP (Auto) - ISP Default</sys:String>
+    <sys:String x:Key="DNSResetSuccess">DNS has been reset to automatic (DHCP).</sys:String>
+    <sys:String x:Key="Success">Success</sys:String>
+    <sys:String x:Key="DNSChangeSuccess">DNS changed successfully</sys:String>
+    <sys:String x:Key="Info">Information</sys:String>
+
+    <!-- DNS Page Keys (Alternate naming) -->
+    <sys:String x:Key="DnsPage_Title">DNS Optimizer</sys:String>
+    <sys:String x:Key="DnsPage_Subtitle">Optimize your internet connection by choosing the fastest DNS servers</sys:String>
+    <sys:String x:Key="Btn_FlushDns">Flush DNS</sys:String>
+    <sys:String x:Key="Btn_NetworkReset">Network Reset</sys:String>
+    <sys:String x:Key="Btn_TestAllServers">Test All Servers</sys:String>
+    <sys:String x:Key="Label_CurrentDnsSettings">Current DNS Settings</sys:String>
+    <sys:String x:Key="Text_Loading">Loading...</sys:String>
+    <sys:String x:Key="Label_Feature">FEATURE</sys:String>
+    <sys:String x:Key="Text_NotAvailable">N/A</sys:String>
+    <sys:String x:Key="Text_LatencyPlaceholder">-- ms</sys:String>
+    <sys:String x:Key="Text_LatencyIsp">ISP</sys:String>
+    <sys:String x:Key="Text_LatencyTimeout">Timeout</sys:String>
+    <sys:String x:Key="Tab_AllServers">All Servers</sys:String>
+    <sys:String x:Key="Tab_Recommended">Recommended</sys:String>
+    <sys:String x:Key="Tab_Fast">Fast</sys:String>
+    <sys:String x:Key="Tab_Security">Security</sys:String>
+    <sys:String x:Key="DnsProvider_Google_Name">Google Public DNS</sys:String>
+    <sys:String x:Key="DnsProvider_Google_Desc">Reliable &amp; Widely Supported</sys:String>
+    <sys:String x:Key="DnsProvider_Google_Ip">8.8.8.8 / 8.8.4.4</sys:String>
+    <sys:String x:Key="DnsProvider_Google_Info">Leverages Google's massive global infrastructure for maximum uptime and reliability.</sys:String>
+    <sys:String x:Key="Tag_Reliable">Reliable</sys:String>
+    <sys:String x:Key="Tag_WidelySupported">Widely Supported</sys:String>
+    <sys:String x:Key="DnsProvider_Cloudflare_Name">Cloudflare</sys:String>
+    <sys:String x:Key="DnsProvider_Cloudflare_Desc">Fast &amp; Privacy-Focused</sys:String>
+    <sys:String x:Key="DnsProvider_Cloudflare_Ip">1.1.1.1 / 1.0.0.1</sys:String>
+    <sys:String x:Key="DnsProvider_Cloudflare_Info">Blazing fast DNS with a strict no-log policy for ultimate privacy protection.</sys:String>
+    <sys:String x:Key="Tag_Fast">Fast</sys:String>
+    <sys:String x:Key="Tag_Privacy">Privacy</sys:String>
+    <sys:String x:Key="Tag_Security">Security</sys:String>
+    <sys:String x:Key="DnsProvider_OpenDns_Name">OpenDNS</sys:String>
+    <sys:String x:Key="DnsProvider_OpenDns_Desc">Content Filtering</sys:String>
+    <sys:String x:Key="DnsProvider_OpenDns_Ip">208.67.222.222 / 208.67.220.220</sys:String>
+    <sys:String x:Key="DnsProvider_OpenDns_Info">Enterprise-grade security with smart content filtering for families and businesses.</sys:String>
+    <sys:String x:Key="Tag_Filtering">Filtering</sys:String>
+    <sys:String x:Key="DnsProvider_Quad9_Name">Quad9</sys:String>
+    <sys:String x:Key="DnsProvider_Quad9_Desc">Threat Protection</sys:String>
+    <sys:String x:Key="DnsProvider_Quad9_Ip">9.9.9.9 / 149.112.112.112</sys:String>
+    <sys:String x:Key="DnsProvider_Quad9_Info">Security-focused DNS with threat intelligence blocking from global partners.</sys:String>
+    <sys:String x:Key="Tag_ThreatBlocking">Threat Blocking</sys:String>
+    <sys:String x:Key="DnsProvider_AdGuard_Name">AdGuard DNS</sys:String>
+    <sys:String x:Key="DnsProvider_AdGuard_Desc">Ad &amp; Tracker Blocker</sys:String>
+    <sys:String x:Key="DnsProvider_AdGuard_Ip">94.140.14.14 / 94.140.15.15</sys:String>
+    <sys:String x:Key="DnsProvider_AdGuard_Info">Eliminate intrusive ads and online tracking at the network level automatically.</sys:String>
+    <sys:String x:Key="Tag_AdBlock">Ad-Block</sys:String>
+    <sys:String x:Key="Tag_MalwareBlock">Malware Block</sys:String>
+    <sys:String x:Key="DnsProvider_Dhcp_Name">Automatic (DHCP)</sys:String>
+    <sys:String x:Key="DnsProvider_Dhcp_Desc">ISP Default</sys:String>
+    <sys:String x:Key="DnsProvider_Dhcp_Ip">Auto / Auto</sys:String>
+    <sys:String x:Key="DnsProvider_Dhcp_Info">Use your ISP's default DNS servers automatically. No configuration required.</sys:String>
+    <sys:String x:Key="Tag_Default">Default</sys:String>
+    <sys:String x:Key="Tag_IspProvided">ISP Provided</sys:String>
+    <sys:String x:Key="Btn_CustomDns">Custom DNS</sys:String>
+    <sys:String x:Key="Btn_CustomDns_Desc">Manually configure your own DNS servers</sys:String>
+    <sys:String x:Key="Dialog_ConfirmTitle">Confirm DNS Change</sys:String>
+    <sys:String x:Key="Dialog_ConfirmBody">You are about to switch DNS to {0}.</sys:String>
+    <sys:String x:Key="Dialog_LabelPrimary">Primary:</sys:String>
+    <sys:String x:Key="Dialog_LabelSecondary">Secondary:</sys:String>
+    <sys:String x:Key="Dialog_LabelNone">None</sys:String>
+    <sys:String x:Key="Dialog_Warning">DNS settings will change for all active adapters. Cache will be flushed.</sys:String>
+    <sys:String x:Key="Dialog_BtnCancel">Cancel</sys:String>
+    <sys:String x:Key="Dialog_BtnApply">Apply</sys:String>
+    <sys:String x:Key="Dialog_BtnYes">Yes</sys:String>
+    <sys:String x:Key="Dialog_BtnNo">No</sys:String>
+    <sys:String x:Key="Dialog_BtnOk">OK</sys:String>
+    <sys:String x:Key="Dialog_BtnSave">Save</sys:String>
+    <sys:String x:Key="Msg_DnsChanged_Title">DNS Changed Successfully</sys:String>
+    <sys:String x:Key="Msg_DnsChanged_Body">DNS changed to {0}!\n\nPrimary: {1}\nSecondary: {2}</sys:String>
+    <sys:String x:Key="Msg_DnsReset_Body">DNS has been reset to automatic (DHCP).</sys:String>
+    <sys:String x:Key="Msg_DnsFailed_Title">Failed</sys:String>
+    <sys:String x:Key="Msg_DnsFailed_Body">Could not apply DNS settings. Make sure you are running as Administrator.</sys:String>
+    <sys:String x:Key="Msg_FlushSuccess_Title">DNS Cache Flushed</sys:String>
+    <sys:String x:Key="Msg_FlushSuccess_Body">The DNS resolver cache has been cleared successfully.</sys:String>
+    <sys:String x:Key="Msg_NetworkReset_Title">Network Reset Complete</sys:String>
+    <sys:String x:Key="Msg_NetworkReset_Body">Winsock and TCP/IP stack have been reset.\n\nA restart may be required for changes to take full effect.</sys:String>
+    <sys:String x:Key="Msg_NetworkResetConfirm">Winsock + TCP/IP Reset</sys:String>
+    <sys:String x:Key="CustomDns_Title">Custom DNS Configuration</sys:String>
+    <sys:String x:Key="CustomDns_Subtitle">Enter your preferred DNS server addresses</sys:String>
+    <sys:String x:Key="CustomDns_LabelPrimary">Primary DNS Server</sys:String>
+    <sys:String x:Key="CustomDns_LabelSecondary">Secondary DNS Server</sys:String>
+    <sys:String x:Key="CustomDns_PlaceholderPrimary">1.1.1.1</sys:String>
+    <sys:String x:Key="CustomDns_PlaceholderSecondary">1.0.0.1</sys:String>
+    <sys:String x:Key="CustomDns_ErrorInvalidPrimary">Invalid Primary DNS</sys:String>
+    <sys:String x:Key="CustomDns_ErrorInvalidPrimaryBody">Please enter a valid Primary DNS address.\nExample: 8.8.8.8</sys:String>
+    <sys:String x:Key="CustomDns_ErrorInvalidSecondary">Invalid Secondary DNS</sys:String>
+    <sys:String x:Key="CustomDns_ErrorInvalidSecondaryBody">Please enter a valid Secondary DNS address or leave it empty.</sys:String>
+    <sys:String x:Key="Text_Custom">Custom</sys:String>
+    <sys:String x:Key="Text_Testing">Testing...</sys:String>
+    <sys:String x:Key="Text_WiFi">Wi-Fi</sys:String>
+    <sys:String x:Key="Text_Unknown">Unknown</sys:String>
+    
+    <sys:String x:Key="Label_Latency">Latency</sys:String>
+
+    <!-- ==================== Online PAGE - NEW KEYS ==================== -->
+    <sys:String x:Key="str_AppStoreTitle">App Store</sys:String>
+    <sys:String x:Key="str_AppStoreSubtitle">Choose applications to install or update with ease</sys:String>
+    <sys:String x:Key="str_SearchPlaceholder">Search for an application...</sys:String>
+    <sys:String x:Key="str_UninstallSelected">Uninstall Selected</sys:String>
+    <sys:String x:Key="str_SelectAll">Select All</sys:String>
+    <sys:String x:Key="str_DeselectAll">Deselect All</sys:String>
+    <sys:String x:Key="str_Selected">SELECTED</sys:String>
+    <sys:String x:Key="str_CurrentStatus">CURRENT STATUS</sys:String>
+    <sys:String x:Key="str_ReadyToStart">Ready to start</sys:String>
+    <sys:String x:Key="str_StartInstall">Start Installation</sys:String>
+    <sys:String x:Key="str_StopInstall">Stop Installation</sys:String>
+    <sys:String x:Key="str_ResumeInstall">Resume Installation</sys:String>
+    <sys:String x:Key="str_Installing">Installing...</sys:String>
+    <sys:String x:Key="str_InstallingApp">Installing</sys:String>
+    <sys:String x:Key="str_Paused">Paused</sys:String>
+    <sys:String x:Key="str_Uninstalling">Uninstalling...</sys:String>
+    <sys:String x:Key="str_AppsSelected">apps selected</sys:String>
+    <sys:String x:Key="str_InstallComplete">Installation Complete ✓</sys:String>
+    <sys:String x:Key="str_OpenWebsite">Open official page</sys:String>
+    <sys:String x:Key="str_NoSelectionTitle">No Selection</sys:String>
+    <sys:String x:Key="str_NoSelectionMsg">Please select at least one application.</sys:String>
+    <sys:String x:Key="str_StopInstallTitle">Stop Installation</sys:String>
+    <sys:String x:Key="str_AreYouSureStop">Are you sure you want to stop the installation?</sys:String>
+    <sys:String x:Key="str_ExitInstallTitle">Exit Installation</sys:String>
+    <sys:String x:Key="str_AreYouSureExit">Installation is in progress. Are you sure you want to exit?</sys:String>
+    <sys:String x:Key="str_UninstallTitle">Confirm Uninstall</sys:String>
+    <sys:String x:Key="str_UninstallConfirm">Uninstall {0} application(s)?&#x0A;&#x0A;• {1}</sys:String>
+    <sys:String x:Key="str_InstallDoneTitle">Installation Complete</sys:String>
+    <sys:String x:Key="str_InstallDoneMsg">All selected applications have been installed successfully!</sys:String>
+    <!-- Dialog Buttons -->
+    <sys:String x:Key="str_OK">OK</sys:String>
+    <sys:String x:Key="str_Cancel">Cancel</sys:String>
+    <sys:String x:Key="str_Yes">Yes</sys:String>
+    <sys:String x:Key="str_No">No</sys:String>
+    <!-- Categories -->
+    <sys:String x:Key="str_CatAll">All</sys:String>
+    <sys:String x:Key="str_CatBrowsers">Browsers</sys:String>
+    <sys:String x:Key="str_CatCommunication">Communication</sys:String>
+    <sys:String x:Key="str_CatProductivity">Productivity</sys:String>
+    <sys:String x:Key="str_CatMedia">Media</sys:String>
+    <sys:String x:Key="str_CatDevelopment">Development</sys:String>
+    <sys:String x:Key="str_CatUtilities">Utilities</sys:String>
+    <sys:String x:Key="str_CatGraphics">Graphics</sys:String>
+    <sys:String x:Key="str_CatGaming">Gaming</sys:String>
+    <sys:String x:Key="str_Cat3DPrint">3D Printing</sys:String>
+    <sys:String x:Key="str_CatVPN">VPN &amp; Security</sys:String>
+
+    <!-- App Names - Browsers -->
+    <sys:String x:Key="str_App_Firefox">Firefox</sys:String>
+    <sys:String x:Key="str_Desc_Firefox">Fast, private and secure browser</sys:String>
+    <sys:String x:Key="str_App_Chrome">Google Chrome</sys:String>
+    <sys:String x:Key="str_Desc_Chrome">The world's most popular browser</sys:String>
+    <sys:String x:Key="str_App_Brave">Brave</sys:String>
+    <sys:String x:Key="str_Desc_Brave">Privacy-focused browser</sys:String>
+    <sys:String x:Key="str_App_MSEdge">Microsoft Edge</sys:String>
+    <sys:String x:Key="str_Desc_MSEdge">Fast, secure browser from Microsoft</sys:String>
+    <sys:String x:Key="str_App_ArcBrowser">Arc Browser</sys:String>
+    <sys:String x:Key="str_Desc_ArcBrowser">Modern, productivity-focused browser</sys:String>
+    <sys:String x:Key="str_App_FirefoxNightly">Firefox Nightly</sys:String>
+    <sys:String x:Key="str_Desc_FirefoxNightly">Experimental Firefox build for testing</sys:String>
+    <sys:String x:Key="str_App_Opera">Opera Browser</sys:String>
+    <sys:String x:Key="str_Desc_Opera">Feature-rich browser with built-in VPN</sys:String>
+    <sys:String x:Key="str_App_BraveNightly">Brave Nightly</sys:String>
+    <sys:String x:Key="str_Desc_BraveNightly">Experimental Brave build for testing</sys:String>
+    <sys:String x:Key="str_App_OperaGX">Opera GX</sys:String>
+    <sys:String x:Key="str_Desc_OperaGX">Gaming browser with CPU/RAM limits</sys:String>
+    <sys:String x:Key="str_App_Vivaldi">Vivaldi</sys:String>
+    <sys:String x:Key="str_Desc_Vivaldi">Highly customizable power-user browser</sys:String>
+    <sys:String x:Key="str_App_TorBrowser">Tor Browser</sys:String>
+    <sys:String x:Key="str_Desc_TorBrowser">Anonymous browsing via Tor network</sys:String>
+    <sys:String x:Key="str_App_UngoogledChromium">Ungoogled Chromium</sys:String>
+    <sys:String x:Key="str_Desc_UngoogledChromium">Chromium without Google services</sys:String>
+    <sys:String x:Key="str_App_LibreWolf">LibreWolf</sys:String>
+    <sys:String x:Key="str_Desc_LibreWolf">Privacy-focused Firefox fork</sys:String>
+    <sys:String x:Key="str_App_ZenBrowser">Zen Browser</sys:String>
+    <sys:String x:Key="str_Desc_ZenBrowser">Modern Firefox-based browser</sys:String>
+    <sys:String x:Key="str_App_HibbikiChromium">Hibbiki Chromium</sys:String>
+    <sys:String x:Key="str_Desc_HibbikiChromium">Lightweight Chromium build</sys:String>
+
+    <!-- App Names - Communication -->
+    <sys:String x:Key="str_App_Discord">Discord</sys:String>
+    <sys:String x:Key="str_Desc_Discord">Voice and text chat platform</sys:String>
+    <sys:String x:Key="str_App_Telegram">Telegram</sys:String>
+    <sys:String x:Key="str_Desc_Telegram">Fast and secure messaging</sys:String>
+    <sys:String x:Key="str_App_WhatsApp">WhatsApp</sys:String>
+    <sys:String x:Key="str_Desc_WhatsApp">Simple, reliable messaging</sys:String>
+    <sys:String x:Key="str_App_Zoom">Zoom</sys:String>
+    <sys:String x:Key="str_Desc_Zoom">Video conferencing &amp; online meetings</sys:String>
+    <sys:String x:Key="str_App_Teams">Microsoft Teams</sys:String>
+    <sys:String x:Key="str_Desc_Teams">Collaboration platform for work &amp; school</sys:String>
+    <sys:String x:Key="str_App_Slack">Slack</sys:String>
+    <sys:String x:Key="str_Desc_Slack">Team communication &amp; collaboration hub</sys:String>
+    <sys:String x:Key="str_App_Guilded">Guilded</sys:String>
+    <sys:String x:Key="str_Desc_Guilded">Gaming community chat platform</sys:String>
+    <sys:String x:Key="str_App_Vesktop">Vesktop</sys:String>
+    <sys:String x:Key="str_Desc_Vesktop">Discord client with Vencord support</sys:String>
+    <sys:String x:Key="str_App_Signal">Signal</sys:String>
+    <sys:String x:Key="str_Desc_Signal">Private messaging with end-to-end encryption</sys:String>
+    <sys:String x:Key="str_App_Skype">Skype</sys:String>
+    <sys:String x:Key="str_Desc_Skype">Video calls and messaging</sys:String>
+
+    <!-- App Names - Media -->
+    <sys:String x:Key="str_App_Spotify">Spotify</sys:String>
+    <sys:String x:Key="str_Desc_Spotify">Music streaming app</sys:String>
+    <sys:String x:Key="str_App_VLC">VLC Media Player</sys:String>
+    <sys:String x:Key="str_Desc_VLC">Versatile media player</sys:String>
+    <sys:String x:Key="str_App_HandBrake">HandBrake</sys:String>
+    <sys:String x:Key="str_Desc_HandBrake">Video transcoder</sys:String>
+    <sys:String x:Key="str_App_Medal">Medal</sys:String>
+    <sys:String x:Key="str_Desc_Medal">Gaming clip recorder &amp; sharing platform</sys:String>
+    <sys:String x:Key="str_App_Audacity">Audacity</sys:String>
+    <sys:String x:Key="str_Desc_Audacity">Free, open-source audio editor</sys:String>
+    <sys:String x:Key="str_App_FxSound">FxSound</sys:String>
+    <sys:String x:Key="str_Desc_FxSound">Audio enhancer &amp; equalizer</sys:String>
+    <sys:String x:Key="str_App_OBS">OBS Studio</sys:String>
+    <sys:String x:Key="str_Desc_OBS">Free streaming &amp; recording software</sys:String>
+    <sys:String x:Key="str_App_ShareX">ShareX</sys:String>
+    <sys:String x:Key="str_Desc_ShareX">Screenshot &amp; screen recording tool</sys:String>
+    <sys:String x:Key="str_App_AIMP">AIMP</sys:String>
+    <sys:String x:Key="str_Desc_AIMP">High-quality audio player</sys:String>
+    <sys:String x:Key="str_App_YouTubeMusic">YouTube Music</sys:String>
+    <sys:String x:Key="str_Desc_YouTubeMusic">Official YouTube Music desktop app</sys:String>
+    <sys:String x:Key="str_App_MPCBE">MPC-BE</sys:String>
+    <sys:String x:Key="str_Desc_MPCBE">Lightweight media player</sys:String>
+    <sys:String x:Key="str_App_Kodi">Kodi</sys:String>
+    <sys:String x:Key="str_Desc_Kodi">Open-source media center</sys:String>
+    <sys:String x:Key="str_App_Plex">Plex</sys:String>
+    <sys:String x:Key="str_Desc_Plex">Organize and stream your media</sys:String>
+
+    <!-- App Names - Graphics -->
+    <sys:String x:Key="str_App_Kate">Kate</sys:String>
+    <sys:String x:Key="str_Desc_Kate">Advanced text editor by KDE</sys:String>
+    <sys:String x:Key="str_App_Krita">Krita</sys:String>
+    <sys:String x:Key="str_Desc_Krita">Professional digital painting software</sys:String>
+    <sys:String x:Key="str_App_PaintDotNet">Paint.NET</sys:String>
+    <sys:String x:Key="str_Desc_PaintDotNet">Image &amp; photo editing software</sys:String>
+    <sys:String x:Key="str_App_IrfanView">IrfanView</sys:String>
+    <sys:String x:Key="str_Desc_IrfanView">Fast, compact image viewer</sys:String>
+    <sys:String x:Key="str_App_GIMP">GIMP</sys:String>
+    <sys:String x:Key="str_Desc_GIMP">GNU Image Manipulation Program</sys:String>
+    <sys:String x:Key="str_App_Inkscape">Inkscape</sys:String>
+    <sys:String x:Key="str_Desc_Inkscape">Professional vector graphics editor</sys:String>
+    <sys:String x:Key="str_App_Blender">Blender</sys:String>
+    <sys:String x:Key="str_Desc_Blender">3D creation suite for modeling &amp; animation</sys:String>
+
+    <!-- App Names - Gaming -->
+    <sys:String x:Key="str_App_EpicGames">Epic Games Launcher</sys:String>
+    <sys:String x:Key="str_Desc_EpicGames">Access Epic Games store &amp; Fortnite</sys:String>
+    <sys:String x:Key="str_App_Steam">Steam</sys:String>
+    <sys:String x:Key="str_Desc_Steam">The ultimate PC gaming platform</sys:String>
+    <sys:String x:Key="str_App_EA">EA App</sys:String>
+    <sys:String x:Key="str_Desc_EA">Electronic Arts game launcher</sys:String>
+    <sys:String x:Key="str_App_BattleNet">Battle.net</sys:String>
+    <sys:String x:Key="str_Desc_BattleNet">Blizzard games launcher</sys:String>
+    <sys:String x:Key="str_App_Modrinth">Modrinth App</sys:String>
+    <sys:String x:Key="str_Desc_Modrinth">Minecraft mod manager &amp; launcher</sys:String>
+    <sys:String x:Key="str_App_Minecraft">Minecraft Launcher</sys:String>
+    <sys:String x:Key="str_Desc_Minecraft">Official Minecraft game launcher</sys:String>
+    <sys:String x:Key="str_App_Cemu">Cemu</sys:String>
+    <sys:String x:Key="str_Desc_Cemu">Wii U emulator for PC</sys:String>
+    <sys:String x:Key="str_App_Moonlight">Moonlight</sys:String>
+    <sys:String x:Key="str_Desc_Moonlight">GameStream client for NVIDIA GPUs</sys:String>
+    <sys:String x:Key="str_App_Sunshine">Sunshine</sys:String>
+    <sys:String x:Key="str_Desc_Sunshine">Self-hosted game streaming server</sys:String>
+    <sys:String x:Key="str_App_Playnite">Playnite</sys:String>
+    <sys:String x:Key="str_Desc_Playnite">Unified game library manager</sys:String>
+    <sys:String x:Key="str_App_Bloxstrap">Bloxstrap</sys:String>
+    <sys:String x:Key="str_Desc_Bloxstrap">Roblox bootstrapper with extras</sys:String>
+    <sys:String x:Key="str_App_PrismLauncher">Prism Launcher</sys:String>
+    <sys:String x:Key="str_Desc_PrismLauncher">Minecraft launcher with mod support</sys:String>
+    <sys:String x:Key="str_App_GeForceNOW">GeForce NOW</sys:String>
+    <sys:String x:Key="str_Desc_GeForceNOW">Cloud gaming by NVIDIA</sys:String>
+    <sys:String x:Key="str_App_Fishstrap">Fishstrap</sys:String>
+    <sys:String x:Key="str_Desc_Fishstrap">Roblox enhancement tool</sys:String>
+    <sys:String x:Key="str_App_GOGGalaxy">GOG Galaxy</sys:String>
+    <sys:String x:Key="str_Desc_GOGGalaxy">GOG game launcher</sys:String>
+    <sys:String x:Key="str_App_XboxApp">Xbox App</sys:String>
+    <sys:String x:Key="str_Desc_XboxApp">Xbox Game Pass &amp; PC gaming</sys:String>
+    <sys:String x:Key="str_App_UbisoftConnect">Ubisoft Connect</sys:String>
+    <sys:String x:Key="str_Desc_UbisoftConnect">Ubisoft game launcher</sys:String>
+
+    <!-- App Names - Development -->
+    <sys:String x:Key="str_App_VSCode">VS Code</sys:String>
+    <sys:String x:Key="str_Desc_VSCode">Professional code editor</sys:String>
+    <sys:String x:Key="str_App_NotepadPP">Notepad++</sys:String>
+    <sys:String x:Key="str_Desc_NotepadPP">Source code and text editor</sys:String>
+    <sys:String x:Key="str_App_Git">Git</sys:String>
+    <sys:String x:Key="str_Desc_Git">Version control system</sys:String>
+    <sys:String x:Key="str_App_NodeJS">Node.js</sys:String>
+    <sys:String x:Key="str_Desc_NodeJS">JavaScript runtime environment</sys:String>
+    <sys:String x:Key="str_App_Docker">Docker Desktop</sys:String>
+    <sys:String x:Key="str_Desc_Docker">Container platform</sys:String>
+    <sys:String x:Key="str_App_VSCodeInsiders">VS Code Insiders</sys:String>
+    <sys:String x:Key="str_Desc_VSCodeInsiders">Preview build of VS Code</sys:String>
+    <sys:String x:Key="str_App_VS2022">Visual Studio 2022</sys:String>
+    <sys:String x:Key="str_Desc_VS2022">Full-featured IDE for developers</sys:String>
+    <sys:String x:Key="str_App_Arduino">Arduino IDE</sys:String>
+    <sys:String x:Key="str_Desc_Arduino">Official Arduino development environment</sys:String>
+    <sys:String x:Key="str_App_SublimeText">Sublime Text</sys:String>
+    <sys:String x:Key="str_Desc_SublimeText">Sophisticated text editor for code</sys:String>
+    <sys:String x:Key="str_App_GitHubDesktop">GitHub Desktop</sys:String>
+    <sys:String x:Key="str_Desc_GitHubDesktop">Simple Git workflow for GitHub</sys:String>
+    <sys:String x:Key="str_App_Postman">Postman</sys:String>
+    <sys:String x:Key="str_Desc_Postman">API development &amp; testing platform</sys:String>
+    <sys:String x:Key="str_App_Rust">Rust (MSVC)</sys:String>
+    <sys:String x:Key="str_Desc_Rust">Systems programming language</sys:String>
+    <sys:String x:Key="str_App_Neovim">Neovim</sys:String>
+    <sys:String x:Key="str_Desc_Neovim">Vim-fork focused on extensibility</sys:String>
+    <sys:String x:Key="str_App_Vim">Vim</sys:String>
+    <sys:String x:Key="str_Desc_Vim">Highly configurable text editor</sys:String>
+    <sys:String x:Key="str_App_Go">Go</sys:String>
+    <sys:String x:Key="str_Desc_Go">Efficient, compiled programming language</sys:String>
+    <sys:String x:Key="str_App_UnityHub">Unity Hub</sys:String>
+    <sys:String x:Key="str_Desc_UnityHub">Manage Unity installations &amp; projects</sys:String>
+    <sys:String x:Key="str_App_CMake">CMake</sys:String>
+    <sys:String x:Key="str_Desc_CMake">Cross-platform build system generator</sys:String>
+    <sys:String x:Key="str_App_OhMyPosh">Oh My Posh</sys:String>
+    <sys:String x:Key="str_Desc_OhMyPosh">Customizable prompt theme engine</sys:String>
+    <sys:String x:Key="str_App_Bun">Bun</sys:String>
+    <sys:String x:Key="str_Desc_Bun">Fast JavaScript runtime &amp; bundler</sys:String>
+    <sys:String x:Key="str_App_uv">uv</sys:String>
+    <sys:String x:Key="str_Desc_uv">Fast Python package installer</sys:String>
+    <sys:String x:Key="str_App_Python313">Python 3.13</sys:String>
+    <sys:String x:Key="str_Desc_Python313">Latest Python programming language</sys:String>
+    <sys:String x:Key="str_App_DBeaver">DBeaver</sys:String>
+    <sys:String x:Key="str_Desc_DBeaver">Universal database tool</sys:String>
+    <sys:String x:Key="str_App_TemurinJDK17">Temurin JDK 17</sys:String>
+    <sys:String x:Key="str_Desc_TemurinJDK17">OpenJDK distribution from Eclipse</sys:String>
+    <sys:String x:Key="str_App_AndroidStudio">Android Studio</sys:String>
+    <sys:String x:Key="str_Desc_AndroidStudio">Official Android development IDE</sys:String>
+    <sys:String x:Key="str_App_DotNetSDK8">.NET SDK 8.0</sys:String>
+    <sys:String x:Key="str_Desc_DotNetSDK8">Microsoft .NET development platform</sys:String>
+    <sys:String x:Key="str_App_MongoDBCompass">MongoDB Compass</sys:String>
+    <sys:String x:Key="str_Desc_MongoDBCompass">GUI for MongoDB databases</sys:String>
+    <sys:String x:Key="str_App_MySQL">MySQL</sys:String>
+    <sys:String x:Key="str_Desc_MySQL">Popular open-source database</sys:String>
+    <sys:String x:Key="str_App_PostgreSQL">PostgreSQL</sys:String>
+    <sys:String x:Key="str_Desc_PostgreSQL">Advanced open-source database</sys:String>
+
+    <!-- App Names - Utilities -->
+    <sys:String x:Key="str_App_7Zip">7-Zip</sys:String>
+    <sys:String x:Key="str_Desc_7Zip">File archiver and compressor</sys:String>
+    <sys:String x:Key="str_App_PowerToys">PowerToys</sys:String>
+    <sys:String x:Key="str_Desc_PowerToys">Windows productivity tools</sys:String>
+    <sys:String x:Key="str_App_WinRAR">WinRAR</sys:String>
+    <sys:String x:Key="str_Desc_WinRAR">File archiver utility</sys:String>
+    <sys:String x:Key="str_App_RustDesk">RustDesk</sys:String>
+    <sys:String x:Key="str_Desc_RustDesk">Open-source remote desktop software</sys:String>
+    <sys:String x:Key="str_App_Rufus">Rufus</sys:String>
+    <sys:String x:Key="str_Desc_Rufus">Create bootable USB drives</sys:String>
+    <sys:String x:Key="str_App_Everything">Everything</sys:String>
+    <sys:String x:Key="str_Desc_Everything">Instant file search for Windows</sys:String>
+    <sys:String x:Key="str_App_FanControl">Fan Control</sys:String>
+    <sys:String x:Key="str_Desc_FanControl">Customize PC fan curves</sys:String>
+    <sys:String x:Key="str_App_Afterburner">MSI Afterburner</sys:String>
+    <sys:String x:Key="str_Desc_Afterburner">GPU overclocking &amp; monitoring</sys:String>
+    <sys:String x:Key="str_App_Tabby">Tabby</sys:String>
+    <sys:String x:Key="str_Desc_Tabby">Modern terminal emulator</sys:String>
+    <sys:String x:Key="str_App_OpenRGB">OpenRGB</sys:String>
+    <sys:String x:Key="str_Desc_OpenRGB">Control RGB lighting across devices</sys:String>
+    <sys:String x:Key="str_App_Parsec">Parsec</sys:String>
+    <sys:String x:Key="str_Desc_Parsec">Low-latency remote desktop for gaming</sys:String>
+    <sys:String x:Key="str_App_GPUZ">GPU-Z</sys:String>
+    <sys:String x:Key="str_Desc_GPUZ">Graphics card information utility</sys:String>
+    <sys:String x:Key="str_App_HWMonitor">HWMonitor</sys:String>
+    <sys:String x:Key="str_Desc_HWMonitor">Hardware monitoring &amp; sensors</sys:String>
+    <sys:String x:Key="str_App_PuTTY">PuTTY</sys:String>
+    <sys:String x:Key="str_Desc_PuTTY">SSH &amp; telnet client</sys:String>
+    <sys:String x:Key="str_App_DDU">Display Driver Uninstaller</sys:String>
+    <sys:String x:Key="str_Desc_DDU">Clean removal of graphics drivers</sys:String>
+    <sys:String x:Key="str_App_SignalRGB">SignalRGB</sys:String>
+    <sys:String x:Key="str_Desc_SignalRGB">Unified RGB lighting control</sys:String>
+    <sys:String x:Key="str_App_FlowLauncher">Flow Launcher</sys:String>
+    <sys:String x:Key="str_Desc_FlowLauncher">Fast app &amp; file launcher</sys:String>
+    <sys:String x:Key="str_App_AnyDesk">AnyDesk</sys:String>
+    <sys:String x:Key="str_Desc_AnyDesk">Remote desktop software</sys:String>
+    <sys:String x:Key="str_App_WizTree">WizTree</sys:String>
+    <sys:String x:Key="str_Desc_WizTree">Fast disk space analyzer</sys:String>
+    <sys:String x:Key="str_App_BCU">Bulk Crap Uninstaller</sys:String>
+    <sys:String x:Key="str_Desc_BCU">Remove many programs at once</sys:String>
+    <sys:String x:Key="str_App_Wireshark">Wireshark</sys:String>
+    <sys:String x:Key="str_Desc_Wireshark">Network protocol analyzer</sys:String>
+    <sys:String x:Key="str_App_Windhawk">Windhawk</sys:String>
+    <sys:String x:Key="str_Desc_Windhawk">Windows customization platform</sys:String>
+    <sys:String x:Key="str_App_BulkRename">Bulk Rename Utility</sys:String>
+    <sys:String x:Key="str_Desc_BulkRename">Advanced file renaming tool</sys:String>
+    <sys:String x:Key="str_App_qBittorrent">qBittorrent</sys:String>
+    <sys:String x:Key="str_Desc_qBittorrent">Free, open-source BitTorrent client</sys:String>
+    <sys:String x:Key="str_App_FileConverter">File Converter</sys:String>
+    <sys:String x:Key="str_Desc_FileConverter">Convert files via right-click menu</sys:String>
+    <sys:String x:Key="str_App_JDownloader">JDownloader</sys:String>
+    <sys:String x:Key="str_Desc_JDownloader">Download manager for file hosts</sys:String>
+    <sys:String x:Key="str_App_LivelyWallpaper">Lively Wallpaper</sys:String>
+    <sys:String x:Key="str_Desc_LivelyWallpaper">Animated desktop wallpapers</sys:String>
+    <sys:String x:Key="str_App_TwinkleTray">Twinkle Tray</sys:String>
+    <sys:String x:Key="str_Desc_TwinkleTray">Control monitor brightness easily</sys:String>
+    <sys:String x:Key="str_App_Files">Files</sys:String>
+    <sys:String x:Key="str_Desc_Files">Modern file manager for Windows</sys:String>
+    <sys:String x:Key="str_App_SuperF4">SuperF4</sys:String>
+    <sys:String x:Key="str_Desc_SuperF4">Kill programs with keyboard shortcut</sys:String>
+    <sys:String x:Key="str_App_RevoUninstaller">Revo Uninstaller</sys:String>
+    <sys:String x:Key="str_Desc_RevoUninstaller">Advanced program uninstaller</sys:String>
+    <sys:String x:Key="str_App_FDM">Free Download Manager</sys:String>
+    <sys:String x:Key="str_Desc_FDM">Accelerate downloads &amp; manage files</sys:String>
+    <sys:String x:Key="str_App_TeamViewer">TeamViewer</sys:String>
+    <sys:String x:Key="str_Desc_TeamViewer">Remote control &amp; online meetings</sys:String>
+    <sys:String x:Key="str_App_VirtualBox">VirtualBox</sys:String>
+    <sys:String x:Key="str_Desc_VirtualBox">Run other OSes in virtual machines</sys:String>
+    <sys:String x:Key="str_App_Fastfetch">Fastfetch</sys:String>
+    <sys:String x:Key="str_Desc_Fastfetch">System information display tool</sys:String>
+    <sys:String x:Key="str_App_ZeroTier">ZeroTier</sys:String>
+    <sys:String x:Key="str_Desc_ZeroTier">Software-defined networking</sys:String>
+    <sys:String x:Key="str_App_CopyQ">CopyQ</sys:String>
+    <sys:String x:Key="str_Desc_CopyQ">Advanced clipboard manager</sys:String>
+    <sys:String x:Key="str_App_WinMerge">WinMerge</sys:String>
+    <sys:String x:Key="str_Desc_WinMerge">File &amp; folder comparison tool</sys:String>
+    <sys:String x:Key="str_App_ABDownloadManager">AB Download Manager</sys:String>
+    <sys:String x:Key="str_Desc_ABDownloadManager">Fast, organized download manager</sys:String>
+    <sys:String x:Key="str_App_TotalCommander">Total Commander</sys:String>
+    <sys:String x:Key="str_Desc_TotalCommander">Powerful file manager with dual panes</sys:String>
+    <sys:String x:Key="str_App_Autoruns">Sysinternals Autoruns</sys:String>
+    <sys:String x:Key="str_Desc_Autoruns">View auto-starting programs</sys:String>
+    <sys:String x:Key="str_App_NanaZip">NanaZip</sys:String>
+    <sys:String x:Key="str_Desc_NanaZip">Modern 7-Zip derivative</sys:String>
+    <sys:String x:Key="str_App_Etcher">balenaEtcher</sys:String>
+    <sys:String x:Key="str_Desc_Etcher">Flash OS images to USB/SD cards</sys:String>
+    <sys:String x:Key="str_App_GeekUninstaller">Geek Uninstaller</sys:String>
+    <sys:String x:Key="str_Desc_GeekUninstaller">Simple, fast program remover</sys:String>
+    <sys:String x:Key="str_App_Rainmeter">Rainmeter</sys:String>
+    <sys:String x:Key="str_Desc_Rainmeter">Desktop customization tool</sys:String>
+    <sys:String x:Key="str_App_YASB">YASB</sys:String>
+    <sys:String x:Key="str_Desc_YASB">Yet Another Status Bar</sys:String>
+    <sys:String x:Key="str_App_BleachBit">BleachBit</sys:String>
+    <sys:String x:Key="str_Desc_BleachBit">System cleaner &amp; privacy tool</sys:String>
+    <sys:String x:Key="str_App_CPUZ">CPU-Z</sys:String>
+    <sys:String x:Key="str_Desc_CPUZ">System information tool</sys:String>
+    <sys:String x:Key="str_App_CrystalDiskInfo">CrystalDiskInfo</sys:String>
+    <sys:String x:Key="str_Desc_CrystalDiskInfo">Disk health monitoring</sys:String>
+    <sys:String x:Key="str_App_FileZilla">FileZilla</sys:String>
+    <sys:String x:Key="str_Desc_FileZilla">FTP client and server</sys:String>
+    <sys:String x:Key="str_App_PeaZip">PeaZip</sys:String>
+    <sys:String x:Key="str_Desc_PeaZip">Archive manager and compressor</sys:String>
+    <sys:String x:Key="str_App_GlassWire">GlassWire</sys:String>
+    <sys:String x:Key="str_Desc_GlassWire">Network monitor &amp; firewall</sys:String>
+    <sys:String x:Key="str_App_Greenshot">Greenshot</sys:String>
+    <sys:String x:Key="str_Desc_Greenshot">Quick screenshot tool</sys:String>
+    <sys:String x:Key="str_App_HWiNFO">HWiNFO</sys:String>
+    <sys:String x:Key="str_Desc_HWiNFO">Hardware information tool</sys:String>
+    <sys:String x:Key="str_App_Recuva">Recuva</sys:String>
+    <sys:String x:Key="str_Desc_Recuva">File recovery software</sys:String>
+    <sys:String x:Key="str_App_Ventoy">Ventoy</sys:String>
+    <sys:String x:Key="str_Desc_Ventoy">Bootable USB drive creator</sys:String>
+    <sys:String x:Key="str_App_WinSCP">WinSCP</sys:String>
+    <sys:String x:Key="str_Desc_WinSCP">SFTP and FTP client</sys:String>
+    <sys:String x:Key="str_App_KeePassXC">KeePassXC</sys:String>
+    <sys:String x:Key="str_Desc_KeePassXC">Open-source password manager</sys:String>
+
+    <!-- App Names - Productivity -->
+    <sys:String x:Key="str_App_Notion">Notion</sys:String>
+    <sys:String x:Key="str_Desc_Notion">Notes and productivity workspace</sys:String>
+    <sys:String x:Key="str_App_Dropbox">Dropbox</sys:String>
+    <sys:String x:Key="str_Desc_Dropbox">Cloud storage &amp; file syncing</sys:String>
+    <sys:String x:Key="str_App_MSOffice">Microsoft Office</sys:String>
+    <sys:String x:Key="str_Desc_MSOffice">Word, Excel, PowerPoint &amp; more</sys:String>
+    <sys:String x:Key="str_App_AdobeReader">Adobe Acrobat Reader</sys:String>
+    <sys:String x:Key="str_Desc_AdobeReader">PDF viewer and editor</sys:String>
+    <sys:String x:Key="str_App_SumatraPDF">SumatraPDF</sys:String>
+    <sys:String x:Key="str_Desc_SumatraPDF">Lightweight PDF reader</sys:String>
+    <sys:String x:Key="str_App_LibreOffice">LibreOffice</sys:String>
+    <sys:String x:Key="str_Desc_LibreOffice">Free office suite</sys:String>
+    <sys:String x:Key="str_App_Obsidian">Obsidian</sys:String>
+    <sys:String x:Key="str_Desc_Obsidian">Knowledge base &amp; note-taking</sys:String>
+    <sys:String x:Key="str_App_Logseq">Logseq</sys:String>
+    <sys:String x:Key="str_Desc_Logseq">Privacy-first knowledge management</sys:String>
+
+    <!-- App Names - 3D Printing -->
+    <sys:String x:Key="str_App_BambuStudio">Bambu Studio</sys:String>
+    <sys:String x:Key="str_Desc_BambuStudio">3D printing slicer for Bambu Lab</sys:String>
+    <sys:String x:Key="str_App_PrusaSlicer">PrusaSlicer</sys:String>
+    <sys:String x:Key="str_Desc_PrusaSlicer">Feature-rich 3D printing slicer</sys:String>
+    <sys:String x:Key="str_App_OrcaSlicer">OrcaSlicer</sys:String>
+    <sys:String x:Key="str_Desc_OrcaSlicer">Community-enhanced PrusaSlicer fork</sys:String>
+    <sys:String x:Key="str_App_CrealityPrint">Creality Print</sys:String>
+    <sys:String x:Key="str_Desc_CrealityPrint">Slicer for Creality 3D printers</sys:String>
+    <sys:String x:Key="str_App_Cura">Ultimaker Cura</sys:String>
+    <sys:String x:Key="str_Desc_Cura">Popular 3D printing slicer</sys:String>
+
+    <!-- App Names - VPN & Security -->
+    <sys:String x:Key="str_App_Surfshark">Surfshark VPN</sys:String>
+    <sys:String x:Key="str_Desc_Surfshark">Unlimited device VPN service</sys:String>
+    <sys:String x:Key="str_App_OpenVPN">OpenVPN</sys:String>
+    <sys:String x:Key="str_Desc_OpenVPN">Open-source VPN solution</sys:String>
+    <sys:String x:Key="str_App_Windscribe">Windscribe VPN</sys:String>
+    <sys:String x:Key="str_Desc_Windscribe">Privacy-focused VPN with free tier</sys:String>
+    <sys:String x:Key="str_App_Tailscale">Tailscale</sys:String>
+    <sys:String x:Key="str_Desc_Tailscale">Zero-config VPN for your devices</sys:String>
+    <sys:String x:Key="str_App_ProtonVPN">Proton VPN</sys:String>
+    <sys:String x:Key="str_Desc_ProtonVPN">Secure VPN by Proton (Swiss)</sys:String>
+    <sys:String x:Key="str_App_ExpressVPN">ExpressVPN</sys:String>
+    <sys:String x:Key="str_Desc_ExpressVPN">Fast, reliable VPN service</sys:String>
+    <sys:String x:Key="str_App_NordVPN">NordVPN</sys:String>
+    <sys:String x:Key="str_Desc_NordVPN">Popular VPN with strong security</sys:String>
+    <sys:String x:Key="str_App_PIA">Private Internet Access</sys:String>
+    <sys:String x:Key="str_Desc_PIA">Privacy-focused VPN service</sys:String>
+    <sys:String x:Key="str_App_IPVanish">IPVanish</sys:String>
+    <sys:String x:Key="str_Desc_IPVanish">High-speed VPN with unlimited bandwidth</sys:String>
+    <sys:String x:Key="str_App_MullvadVPN">Mullvad VPN</sys:String>
+    <sys:String x:Key="str_Desc_MullvadVPN">Anonymous VPN, no accounts needed</sys:String>
+    <sys:String x:Key="str_App_Bitwarden">Bitwarden</sys:String>
+    <sys:String x:Key="str_Desc_Bitwarden">Open-source password manager</sys:String>
+    <sys:String x:Key="str_App_Malwarebytes">Malwarebytes</sys:String>
+    <sys:String x:Key="str_Desc_Malwarebytes">Anti-malware &amp; security software</sys:String>
+
+    <!-- App Names - Peripherals -->
+    <sys:String x:Key="str_App_LogitechGHUB">Logitech G HUB</sys:String>
+    <sys:String x:Key="str_Desc_LogitechGHUB">Customize Logitech gaming gear</sys:String>
+    <sys:String x:Key="str_App_RazerSynapse4">Razer Synapse 4</sys:String>
+    <sys:String x:Key="str_Desc_RazerSynapse4">Configure Razer devices &amp; RGB</sys:String>
+    <sys:String x:Key="str_App_SteelSeriesGG">SteelSeries GG</sys:String>
+    <sys:String x:Key="str_Desc_SteelSeriesGG">SteelSeries device management suite</sys:String>
+
+    <!-- Queue & Misc -->
+    <sys:String x:Key="str_QueueListTitle">Install Queue</sys:String>
+    <sys:String x:Key="str_QueueListTooltip">View install queue</sys:String>
+    <sys:String x:Key="str_QueueEmpty">No apps selected</sys:String>
+    <sys:String x:Key="str_RemoveFromQueue">Remove from queue</sys:String>
+    <sys:String x:Key="str_UninstallComplete">Uninstall Complete ✓</sys:String>
+    <sys:String x:Key="str_UninstallCancelled">Uninstall Cancelled</sys:String>
+    <sys:String x:Key="str_ExitUninstallTitle">Exit Uninstallation</sys:String>
+    <sys:String x:Key="str_AreYouSureExitUninstall">Uninstallation is in progress. Are you sure you want to exit?</sys:String>
+    <sys:String x:Key="str_ExtLinkIcon">&#xE8A7;</sys:String>
+    <sys:String x:Key="str_InstalledStatus">Installed successfully</sys:String>
+    <sys:String x:Key="str_UninstalledStatus">Uninstalled successfully</sys:String>
+    <sys:String x:Key="str_ReloadHD">Reload in HD Quality</sys:String>
+    <sys:String x:Key="str_ReloadAlt">Reload from Alternative Source</sys:String>
+    <sys:String x:Key="str_ResetIcon">Reset to Default</sys:String>
+
+    <sys:String x:Key="ChangeIcon">Change Icon</sys:String>
+    <sys:String x:Key="RestoreOriginalIcon">Restore Original Icon</sys:String>
+    <sys:String x:Key="SelectIconFile">Select Icon File</sys:String>
+    <sys:String x:Key="RightClickForOptions">Right-click for options</sys:String>
+    <sys:String x:Key="FailedToChangeIcon">Failed to change icon. Please try another file.</sys:String>
+    <sys:String x:Key="RefreshIcon">Refresh Icon</sys:String>
+
+    <!-- ==================== مفاتيح ناقصة للبرامج الجديدة ==================== -->
+
+
+
+    <!-- Utilities - Torrents & Downloads -->
+    <sys:String x:Key="str_App_Deluge">Deluge</sys:String>
+    <sys:String x:Key="str_Desc_Deluge">Lightweight BitTorrent client</sys:String>
+    <sys:String x:Key="str_App_Transmission">Transmission</sys:String>
+    <sys:String x:Key="str_Desc_Transmission">Fast, easy BitTorrent client</sys:String>
+    <sys:String x:Key="str_App_WebTorrent">WebTorrent</sys:String>
+    <sys:String x:Key="str_Desc_WebTorrent">Streaming torrent client</sys:String>
+
+    <!-- Utilities - Encryption & Sync -->
+    <sys:String x:Key="str_App_Cryptomator">Cryptomator</sys:String>
+    <sys:String x:Key="str_Desc_Cryptomator">Encrypt cloud files</sys:String>
+
+    <!-- VPN/Security - Password Managers -->
+    <sys:String x:Key="str_App_1Password">1Password</sys:String>
+    <sys:String x:Key="str_Desc_1Password">Premium password manager</sys:String>
+    <sys:String x:Key="str_App_Dashlane">Dashlane</sys:String>
+    <sys:String x:Key="str_Desc_Dashlane">Password manager &amp; digital wallet</sys:String>
+    <sys:String x:Key="str_App_LastPass">LastPass</sys:String>
+    <sys:String x:Key="str_Desc_LastPass">Cloud-based password manager</sys:String>
+
+    <!-- VPN -->
+    <sys:String x:Key="str_App_WireGuard">WireGuard</sys:String>
+    <sys:String x:Key="str_Desc_WireGuard">Fast, modern VPN protocol</sys:String>
+
+    <!-- Status Messages -->
+    <sys:String x:Key="str_Queued">Queued</sys:String>
+    <sys:String x:Key="str_Removed">Removed</sys:String>
+    <sys:String x:Key="str_Installed">Installed</sys:String>
+    <sys:String x:Key="str_Failed">Failed</sys:String>
+    <sys:String x:Key="str_Cancelled">Cancelled</sys:String>
+    <!-- ==================== مفاتيح البرامج الإضافية ==================== -->
+    <sys:String x:Key="str_App_FileZillaServer">FileZilla Server</sys:String>
+    <sys:String x:Key="str_Desc_FileZillaServer">Free FTP server software</sys:String>
+
+    <sys:String x:Key="str_App_KeePassX">KeePassX</sys:String>
+    <sys:String x:Key="str_Desc_KeePassX">Classic password manager fork</sys:String>
+
+    <sys:String x:Key="str_App_TailscaleGUI">Tailscale GUI</sys:String>
+    <sys:String x:Key="str_Desc_TailscaleGUI">Tailscale with graphical interface</sys:String>
+
+    <sys:String x:Key="str_App_OpenVPNCommunity">OpenVPN Community</sys:String>
+    <sys:String x:Key="str_Desc_OpenVPNCommunity">Official OpenVPN community edition</sys:String>
+
+    <sys:String x:Key="str_App_SyncThing">SyncThing</sys:String>
+    <sys:String x:Key="str_Desc_SyncThing">Continuous file synchronization</sys:String>
+
+
+</ResourceDictionary>
